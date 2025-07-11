@@ -1,0 +1,3218 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Pacifico&display=swap');
+
+:root {
+	/* typography */
+	--font: 'DynaPuff', system-ui;
+	--font-logo: 'Pacifico', serif;
+
+	/* Adjust font size*/
+	--font-size: 20px;
+
+	/* colors */
+	--color-primary: #ff79ac;
+	--color-text-primary: #e7e7e7;
+
+	/* bg */
+	--color-bg-primary: #24292e;
+	--color-bg-special: transparent;
+
+	/* glass */
+	--glass-bg: #ffffff20;
+	--glass-blur: 10px;
+
+	/* pop */
+	--pop-bg: #ffffff40;
+	--pop-blur: blur(10px);
+	--color-popup-shadow: 0 0 10px var(--color-primary);
+
+	/* buttons */
+	--btn-bg: transparent;
+	--btn-border: 2px solid var(--color-primary);
+
+	/* form */
+	--input-bg: #ffffff40;
+	--input-focus-bg: #ffffff50;
+
+	/* other */
+	--border: 0;
+	/* You can turn on borders for main blocks, uncomment next line */
+	/* --border: 2px solid var(--color-primary); */
+	--radius: 20px;
+	--radius-sm: 10px;
+
+	--block-padding: 20px;
+
+	/* customization */
+	--logo-caption: 'Meow clan';
+	--clan-tag: 'm3ow';
+	--ign: 'deus';
+}
+
+* {
+	font-family: var(--font);
+}
+
+/* #region fz fix */
+.termsBtn {
+	font-size: 1.375rem !important;
+}
+.newsItem {
+	font-size: 0.875rem !important;
+}
+#newsHolder {
+	font-size: 1rem !important;
+}
+#newsHed {
+	font-size: 1.125rem !important;
+}
+#newsStat {
+	font-size: 1.125rem !important;
+}
+.helpGuidOpn {
+	font-size: 0.9375rem !important;
+}
+#helpPText {
+	font-size: 1.875rem !important;
+}
+#helpPText2 {
+	font-size: 1.5625rem !important;
+}
+#homeStoreAdTx {
+	font-size: 1.0625rem !important;
+}
+.guideHeader {
+	font-size: 2.1875rem !important;
+}
+.guideInfoT {
+	font-size: 1.25rem !important;
+}
+.guideStep {
+	font-size: 1.375rem !important;
+}
+.guideStepV {
+	font-size: 1.25rem !important;
+}
+.guideFullTx {
+	font-size: 1.375rem !important;
+}
+#streamContainer {
+	font-size: 1rem !important;
+}
+.streamName {
+	font-size: 1rem !important;
+}
+.streamPartner {
+	font-size: 1.5rem !important;
+}
+.strmCat {
+	font-size: 1.25rem !important;
+}
+.strmLink {
+	font-size: 0.875rem !important;
+}
+.strmViews {
+	font-size: 0.6875rem !important;
+}
+.menuLink {
+	font-size: 1.375rem !important;
+}
+.terms {
+	font-size: 1.125rem !important;
+}
+#purchaseRespH {
+	font-size: 1.4375rem !important;
+}
+#purchaseSelector {
+	font-size: 1.75rem !important;
+}
+.pay-button {
+	font-size: 0.9375rem !important;
+}
+#xsollaPayB {
+	font-size: 0.9375rem !important;
+}
+.xpBarV {
+	font-size: 1rem !important;
+}
+#chalName {
+	font-size: 5rem !important;
+}
+.perkCnt {
+	font-size: 1.125rem !important;
+}
+.killStreakKey {
+	font-size: 0.75rem !important;
+}
+.killStreakCnt {
+	font-size: 0.75rem !important;
+}
+#centerLeaderDisplay {
+	font-size: 1.25rem !important;
+}
+.newLeaderItem {
+	font-size: 0.9375rem !important;
+}
+.statIcon {
+	font-size: 1.0625rem !important;
+}
+#recTimer {
+	font-size: 1.125rem !important;
+}
+#chatInputHolder {
+	font-size: 0.5625rem !important;
+}
+#chatInput {
+	font-size: 0.875rem !important;
+}
+/* NEW CHAT TABS */
+#chatSwitch {
+	font-size: 2.0625rem !important;
+}
+.chatItem {
+	font-size: 0.875rem !important;
+}
+.serverPing {
+	font-size: 2.3125rem !important;
+}
+#settSearch {
+	font-size: 1rem !important;
+}
+#gameMessage {
+	font-size: 1.375rem !important;
+}
+#roundsVal {
+	font-size: 1.8125rem !important;
+}
+#roundSub {
+	font-size: 1.1875rem !important;
+}
+.roundScrV {
+	font-size: 2.625rem !important;
+}
+#timerVal {
+	font-size: 0.9375rem !important;
+}
+#timerVal.topLeftOld {
+	font-size: 2rem !important;
+}
+#matchInfo {
+	font-size: 0.75rem !important;
+}
+#matchInfo.topLeftOld {
+	font-size: 0.9375rem !important;
+}
+#pingDisplay,
+#fpsDisplay,
+#ingressDisplay,
+#egressDisplay,
+#tickDisplay {
+	font-size: 0.875rem !important;
+}
+#pingText,
+#ingressPacketCount,
+#ingressDataSize,
+#egressPacketCount,
+#egressDataSize,
+#tickPacketCount {
+	font-size: 0.875rem !important;
+}
+#ingressPacketCount,
+#ingressDataSize,
+#egressPacketCount,
+#egressDataSize,
+#tickPacketCount {
+	font-size: 0.875rem !important;
+}
+.tScoreT {
+	font-size: 1.125rem !important;
+}
+.tScoreM {
+	font-size: 0.875rem !important;
+}
+.tScoreF {
+	font-size: 1.875rem !important;
+}
+#bottomLeftHealth {
+	font-size: 1.25rem !important;
+}
+.weapItem {
+	font-size: 1.0625rem !important;
+}
+.weapKey {
+	font-size: 0.875rem !important;
+}
+.weapSkin {
+	font-size: 0.625rem !important;
+}
+.weapStreakHolder {
+	font-size: 0.875rem !important;
+}
+.weapStreakInner {
+	font-size: 0.75rem !important;
+}
+.weapStreak {
+	font-size: 0.75rem !important;
+}
+#reloadMsg {
+	font-size: 1.5625rem !important;
+}
+#hiddenMsg {
+	font-size: 1.6875rem !important;
+}
+#interactMsg {
+	font-size: 1.5625rem !important;
+}
+#mobileUI #interactMsg {
+	font-size: 0.5625rem !important;
+}
+#propControlHolder {
+	font-size: 1.25rem !important;
+}
+#ammoHolder {
+	font-size: 1.8125rem !important;
+}
+#uiBase.onMenu #spectButton {
+	font-size: 1.125rem !important;
+}
+#instructions {
+	font-size: 3rem !important;
+}
+.c2pBtn {
+	font-size: 3.125rem !important;
+}
+.c2pBtnMid {
+	font-size: 3.125rem !important;
+}
+#instructionsUpdateCredit {
+	font-size: 1.4375rem !important;
+}
+#instructionsUpdate {
+	font-size: 2rem !important;
+}
+.instructionsHeader {
+	font-size: 1.875rem !important;
+}
+.instructionsTab {
+	font-size: 1rem !important;
+}
+th {
+	font-size: 1.375rem !important;
+}
+td {
+	font-size: 1.25rem !important;
+}
+.reportBut {
+	font-size: 2.5rem !important;
+}
+.followBut {
+	font-size: 0.875rem !important;
+}
+#endTimer {
+	font-size: 1.875rem !important;
+}
+#purchaseLabel {
+	font-size: 1.5625rem !important;
+}
+#spinKR {
+	font-size: 2.25rem !important;
+}
+#spinInfo {
+	font-size: 1.5625rem !important;
+}
+#spinCost {
+	font-size: 0rem !important;
+}
+#spinUI {
+	font-size: 1.125rem !important;
+}
+.smlInput {
+	font-size: 1.125rem !important;
+}
+.accountInput {
+	font-size: 1.375rem !important;
+}
+.mapActionB {
+	font-size: 1.5625rem !important;
+}
+.mapActionOvrl {
+	font-size: 0.75rem !important;
+}
+#compTimBox {
+	font-size: 1.6875rem !important;
+}
+.compTScrB {
+	font-size: 3.125rem !important;
+}
+#cmpDatBox {
+	font-size: 1.875rem !important;
+}
+#cmpDatSub {
+	font-size: 1.625rem !important;
+}
+.cmpClassLck {
+	font-size: 6.25rem !important;
+}
+.compClassPCnt {
+	font-size: 1.125rem !important;
+}
+.compPLstSt {
+	font-size: 1.5rem !important;
+}
+.cmpTmHed {
+	font-size: 3.25rem !important;
+}
+.compSwpTmB {
+	font-size: 1.625rem !important;
+}
+.compMenBtnS {
+	font-size: 1.625rem !important;
+}
+.hostHeader {
+	font-size: 1.875rem !important;
+}
+#hostCMapPickT {
+	font-size: 1.875rem !important;
+}
+#hostCMapInd {
+	font-size: 3.125rem !important;
+}
+#bigMFeatHBtn {
+	font-size: 1.3125rem !important;
+}
+#bigMFeatPBtn {
+	font-size: 1.3125rem !important;
+}
+.biMFeatInfH {
+	font-size: 1.0625rem !important;
+}
+.biMFeatInfB {
+	font-size: 1.3125rem !important;
+}
+#bigMFeatName {
+	font-size: 2.4375rem !important;
+}
+#bigMFeatDesc {
+	font-size: 1.25rem !important;
+}
+#mapList {
+	font-size: 1.5625rem !important;
+}
+.mapListCat {
+	font-size: 1.5625rem !important;
+}
+.mapListItem {
+	font-size: 1.0625rem !important;
+}
+.mapLICat {
+	font-size: 1.875rem !important;
+}
+.likdByFrnd {
+	font-size: 1rem !important;
+}
+.mapAgeD {
+	font-size: 0.8125rem !important;
+}
+.mapEdit {
+	font-size: 0.75rem !important;
+}
+.loadMoreD {
+	font-size: 1.5625rem !important;
+}
+.loadMoreW {
+	font-size: 1.5625rem !important;
+}
+.punishButton {
+	font-size: 0.9375rem !important;
+}
+.krIconHost {
+	font-size: 0.8125rem !important;
+}
+.krIcon {
+	font-size: 0.9375rem !important;
+}
+.hostPresetBtn {
+	font-size: 0.9375rem !important;
+}
+.serverHostOpH {
+	font-size: 1.875rem !important;
+}
+.serverHostOp {
+	font-size: 2.125rem !important;
+}
+.hostCBtn {
+	font-size: 1.875rem !important;
+}
+.serverCardInfo {
+	font-size: 1.25rem !important;
+}
+.loadoutBtn {
+	font-size: 0.9375rem !important;
+}
+#windowHeader {
+	font-size: 1.5625rem !important;
+}
+#requiresRestart {
+	font-size: 1.125rem !important;
+}
+#menuWindow {
+	font-size: 1.25rem !important;
+}
+.quickJoin {
+	font-size: 0.875rem !important;
+}
+.formInput {
+	font-size: 0.75rem !important;
+}
+#rawMapData {
+	font-size: 1.125rem !important;
+}
+.settText {
+	font-size: 1.375rem !important;
+}
+.contactsHeader {
+	font-size: 1.375rem !important;
+}
+.setHed {
+	font-size: 1.375rem !important;
+}
+.setHedS {
+	font-size: 1.375rem !important;
+}
+.settName,
+.settNameSmall {
+	font-size: 1.375rem !important;
+}
+#infoHolder {
+	font-size: 1.875rem !important;
+}
+#mapInfo {
+	font-size: 1.25rem !important;
+}
+#mapVote {
+	font-size: 1rem !important;
+}
+#matchInfoHolder {
+	font-size: 1.25rem !important;
+}
+.voteHint {
+	font-size: 0.75rem !important;
+}
+#specNames {
+	font-size: 1.5625rem !important;
+}
+#specStatsInner {
+	font-size: 0.9375rem !important;
+}
+#specSUS {
+	font-size: 1.4375rem !important;
+}
+#spectHPV {
+	font-size: 1rem !important;
+}
+.specPHead {
+	font-size: 1.125rem !important;
+}
+#specControlHolder {
+	font-size: 1.25rem !important;
+}
+.specControl {
+	font-size: 1rem !important;
+}
+#trustProgHD {
+	font-size: 0.8125rem !important;
+}
+#specKPDContr {
+	font-size: 1.875rem !important;
+}
+.specKPDContrI {
+	font-size: 1.375rem !important;
+}
+.sliderVal {
+	font-size: 1.125rem !important;
+}
+.inputGrey {
+	font-size: 1.125rem !important;
+}
+.inputGrey2 {
+	font-size: 0.9375rem !important;
+}
+#modLinks {
+	font-size: 1.375rem !important;
+}
+#modDropper p {
+	font-size: 1.375rem !important;
+}
+#seasonLabel {
+	font-size: 1.4375rem !important;
+}
+#gameName {
+	font-size: 7.25rem !important;
+}
+.mailObj {
+	font-size: 0.9375rem !important;
+}
+.unreadBtnM {
+	font-size: 0.75rem !important;
+}
+.mailFrom {
+	font-size: 1.125rem !important;
+}
+.followFrom {
+	font-size: 1.125rem !important;
+}
+.mailSubj {
+	font-size: 1rem !important;
+}
+.mailDate {
+	font-size: 0.9375rem !important;
+}
+#mailCount {
+	font-size: 0.625rem !important;
+}
+#mLevelContV {
+	font-size: 1.875rem !important;
+}
+#menuPingDisplay,
+#menuFPSDisplay {
+	font-size: 0.75rem !important;
+}
+#menuPingText {
+	font-size: 0.75rem !important;
+}
+#shopJnkDsp {
+	font-size: 1.4375rem !important;
+}
+/* .menBtnIcn {
+	font-size: 3.75rem !important;
+} */
+.clanRolD {
+	font-size: 0.9375rem !important;
+}
+#menuClassName {
+	font-size: 1.0625rem !important;
+}
+#menuClassSubtext {
+	font-size: 1.875rem !important;
+}
+#menuClassNameTag {
+	font-size: 1.1875rem !important;
+}
+.menuClassLevelBox {
+	font-size: 1.125rem !important;
+}
+.menuClassPlayerVerified {
+	font-size: 1.75rem !important;
+}
+.menuClassPlayerPartner {
+	font-size: 1.75rem !important;
+}
+.menuClassPlayerPremium {
+	font-size: 1.75rem !important;
+}
+#customizeButton {
+	font-size: 1.6875rem !important;
+}
+.kpdRepLvl {
+	font-size: 0.875rem !important;
+}
+.policeJoinB {
+	font-size: 0.8125rem !important;
+}
+.buttonCL {
+	font-size: 1.25rem !important;
+}
+.button.lgn {
+	font-size: 1.125rem !important;
+}
+.button {
+	font-size: 1.25rem !important;
+}
+.button.smallNoS,
+.button.small {
+	font-size: 1.375rem !important;
+}
+#spinInfoBtn.button {
+	font-size: 1.375rem !important;
+}
+.noBtnCard {
+	font-size: 1.25rem !important;
+}
+.classCard {
+	font-size: 1.5rem !important;
+}
+.className {
+	font-size: 1.125rem !important;
+}
+.classWeap {
+	font-size: 0.8125rem !important;
+}
+.classLvl {
+	font-size: 0.75rem !important;
+}
+.clsXPBarV {
+	font-size: 0.625rem !important;
+}
+.classHP {
+	font-size: 0.75rem !important;
+}
+.skinCard {
+	font-size: 1.25rem !important;
+}
+.skinCreator {
+	font-size: 0.875rem !important;
+}
+.skinRandom {
+	font-size: 3.125rem !important;
+}
+.itemOwn {
+	font-size: 0.75rem !important;
+}
+.itemSea {
+	font-size: 0.75rem !important;
+}
+.itemCnt[data-badge]:after {
+	font-size: 0.75rem !important;
+}
+.selctInfoBtn {
+	font-size: 0.75rem !important;
+}
+.selctDelBtn {
+	font-size: 0.75rem !important;
+}
+#returnHolder {
+	font-size: 1.5625rem !important;
+}
+.matchVoteMap {
+	font-size: 0.875rem !important;
+}
+.matchVoteMode {
+	font-size: 0.75rem !important;
+}
+.matchVoteModifier {
+	font-size: 0.9375rem !important;
+}
+.matchVoteTotal {
+	font-size: 1.125rem !important;
+}
+.shopCard {
+	font-size: 1.375rem !important;
+}
+.shopSale {
+	font-size: 0.75rem !important;
+}
+.hostMapName {
+	font-size: 0.875rem !important;
+}
+#spectateHUD {
+	font-size: 1.5625rem !important;
+}
+#specTimer {
+	font-size: 1.875rem !important;
+}
+#specGameInfo {
+	font-size: 1.0625rem !important;
+}
+.specPlayerName {
+	font-size: 0.625rem !important;
+}
+#specHeaderTm0 {
+	font-size: 1.6875rem !important;
+}
+#specScoreTm0 {
+	font-size: 1.6875rem !important;
+}
+#specNameTm0 {
+	font-size: 1.0625rem !important;
+}
+#specHeaderTm1 {
+	font-size: 1.6875rem !important;
+}
+#specScoreTm1 {
+	font-size: 1.6875rem !important;
+}
+#specNameTm1 {
+	font-size: 1.0625rem !important;
+}
+#specGMessage {
+	font-size: 0.75rem !important;
+}
+.teamTotals {
+	font-size: 1.25rem !important;
+}
+.teamWin0 {
+	font-size: 2rem !important;
+}
+.teamWin1 {
+	font-size: 2rem !important;
+}
+.teamTotalScore {
+	font-size: 1.25rem !important;
+}
+.teamTotalN0 {
+	font-size: 1.1875rem !important;
+}
+.teamTotalN1 {
+	font-size: 1.1875rem !important;
+}
+#networkLag {
+	font-size: 0.75rem !important;
+}
+#skinRewardHolder {
+	font-size: 0.75rem !important;
+}
+#voteToKick {
+	font-size: 0.75rem !important;
+}
+#voteToForfeit {
+	font-size: 0.75rem !important;
+}
+#settingsTabLayout {
+	font-size: 1rem !important;
+}
+.setSugBox2 {
+	font-size: 1.4375rem !important;
+}
+.setSugBox {
+	font-size: 1.4375rem !important;
+}
+.setSugInf {
+	font-size: 1.6875rem !important;
+}
+.settingsBtn {
+	font-size: 1.0625rem !important;
+}
+.settingTab {
+	font-size: 1.25rem !important;
+}
+.creatorCodeBtn {
+	font-size: 1.125rem !important;
+}
+.redVouchBtn {
+	font-size: 1rem !important;
+}
+#mdSrch {
+	font-size: 1.125rem !important;
+}
+#mpSrch {
+	font-size: 1.125rem !important;
+}
+#mpCat {
+	font-size: 1.125rem !important;
+}
+.searchBtn {
+	font-size: 1rem !important;
+}
+.newLeaderNoPlayers {
+	font-size: 0.875rem !important;
+}
+.killfeedItem {
+	font-size: 1.0625rem !important;
+}
+.challMapName {
+	font-size: 1.375rem !important;
+}
+.challMapPrg {
+	font-size: 1rem !important;
+}
+.challHeadrT {
+	font-size: 2.5rem !important;
+}
+.challHeadrS {
+	font-size: 3.125rem !important;
+}
+.challBackArr {
+	font-size: 3.75rem !important;
+}
+.challCrdMsg {
+	font-size: 1.875rem !important;
+}
+.chalCard {
+	font-size: 1.625rem !important;
+}
+.chalXPBarC {
+	font-size: 1rem !important;
+}
+.chalXPVal {
+	font-size: 1rem !important;
+}
+.chalRight {
+	font-size: 1.5625rem !important;
+}
+.chalExpr {
+	font-size: 1.375rem !important;
+}
+.chalRewV {
+	font-size: 1.125rem !important;
+}
+.changeText {
+	font-size: 1.125rem !important;
+}
+.endChalCard {
+	font-size: 1.5rem !important;
+}
+.endChalDesc {
+	font-size: 1rem !important;
+}
+.skinRewCard {
+	font-size: 1.5rem !important;
+}
+.skinRewRight {
+	font-size: 0.9375rem !important;
+}
+.skinRewDesc {
+	font-size: 1rem !important;
+}
+.crftNewRc {
+	font-size: 1.125rem !important;
+}
+.crftItmJnk {
+	font-size: 1.125rem !important;
+}
+.crftItmNm {
+	font-size: 1.125rem !important;
+}
+.crftReqCnt {
+	font-size: 0.8125rem !important;
+}
+.crftItmBtn {
+	font-size: 1rem !important;
+}
+.crftTim {
+	font-size: 1rem !important;
+}
+.crftLimAmnt {
+	font-size: 1.625rem !important;
+}
+.crftHammrIcn {
+	font-size: 6.875rem !important;
+}
+#crftHeaderName {
+	font-size: 2.375rem !important;
+}
+#crftHeaderDesc {
+	font-size: 0.875rem !important;
+}
+.hostToggle {
+	font-size: 0.9375rem !important;
+}
+#leaderboardHolder {
+	font-size: 1.4375rem !important;
+}
+.leaderItem {
+	font-size: 1.125rem !important;
+}
+.reqWLvl {
+	font-size: 1rem !important;
+}
+.reqWIcon {
+	font-size: 9.375rem !important;
+}
+.reqWTxt {
+	font-size: 0.875rem !important;
+}
+#referralHeader {
+	font-size: 1.875rem !important;
+}
+.spinVal {
+	font-size: 1.125rem !important;
+}
+.specVerified {
+	font-size: 1.75rem !important;
+}
+.specNum {
+	font-size: 0.75rem !important;
+}
+.hostOpt {
+	font-size: 0.875rem !important;
+}
+.optName {
+	font-size: 0.875rem !important;
+}
+.subPassChg {
+	font-size: 1.125rem !important;
+}
+#displayN {
+	font-size: 0.875rem !important;
+}
+.updDisN {
+	font-size: 0.9375rem !important;
+}
+.lnkTw {
+	font-size: 0.875rem !important;
+}
+#aliasRes {
+	font-size: 0.875rem !important;
+}
+.premiumSkinCol {
+	font-size: 2.625rem !important;
+}
+.registerToUnlockSkinColor {
+	font-size: 1.25rem !important;
+}
+#premTime {
+	font-size: 1.25rem !important;
+}
+#confirmBtn {
+	font-size: 1.125rem !important;
+}
+#declineBtn {
+	font-size: 1.125rem !important;
+}
+.tListN {
+	font-size: 0.9375rem !important;
+}
+.tItemN {
+	font-size: 0.5rem !important;
+}
+.tItemCnt {
+	font-size: 0.5rem !important;
+}
+.tItemInf {
+	font-size: 0.5rem !important;
+}
+.tSubHolder {
+	font-size: 0.875rem !important;
+}
+#tSubName {
+	font-size: 0.875rem !important;
+}
+#tDecName {
+	font-size: 0.875rem !important;
+}
+.estOfferVal {
+	font-size: 0.9375rem !important;
+}
+.plusOrMinus {
+	font-size: 2.9375rem !important;
+}
+.refAnot {
+	font-size: 1.125rem !important;
+}
+.bigMenTab {
+	font-size: 1.25rem !important;
+}
+.menuTabNew {
+	font-size: 0.9375rem !important;
+}
+#codeInput {
+	font-size: 1rem !important;
+}
+.creationAction {
+	font-size: 1.5rem !important;
+}
+.setToggle {
+	font-size: 1.125rem !important;
+}
+#serverSearch {
+	font-size: 1.125rem !important;
+}
+.plusOrMinus2 {
+	font-size: 2.9375rem !important;
+}
+.slide {
+	font-size: 1.25rem !important;
+}
+.slideName {
+	font-size: 1.4375rem !important;
+}
+.slidePlayers {
+	font-size: 0.9375rem !important;
+}
+.slidePlayers > span {
+	font-size: 1.875rem !important;
+}
+.slideTag {
+	font-size: 0.75rem !important;
+}
+.unknownModeIcon {
+	font-size: 2.1875rem !important;
+}
+.fundsVal {
+	font-size: 1.5625rem !important;
+}
+.crLabel {
+	font-size: 0.875rem !important;
+}
+.crVal {
+	font-size: 1.25rem !important;
+}
+.xpLvl {
+	font-size: 1.25rem !important;
+}
+.xpEndBarV {
+	font-size: 0.875rem !important;
+}
+.medalTxt {
+	font-size: 0.875rem !important;
+}
+.keyIcon {
+	font-size: 0.875rem !important;
+}
+.claimSubTxt {
+	font-size: 1.125rem !important;
+}
+#acpHeader {
+	font-size: 2.5rem !important;
+}
+#acpInfo {
+	font-size: 1.25rem !important;
+}
+.acpButton {
+	font-size: 1.5625rem !important;
+}
+.pfpAction {
+	font-size: 1.5625rem !important;
+}
+#tradeChatHolder {
+	font-size: 1.25rem !important;
+}
+#tradeChatInput {
+	font-size: 0.8125rem !important;
+}
+.tradeChatItem {
+	font-size: 0.6875rem !important;
+}
+.readAll {
+	font-size: 1rem !important;
+}
+#clanFundsIn {
+	font-size: 1.125rem !important;
+}
+.clanFndB {
+	font-size: 1.25rem !important;
+}
+#specKPD {
+	font-size: 3.0625rem !important;
+}
+.bonBAmnt {
+	font-size: 0.9375rem !important;
+}
+.partnerItem {
+	font-size: 1.125rem !important;
+}
+#partnerProg {
+	font-size: 1rem !important;
+}
+#partnerPrTx {
+	font-size: 1.0625rem !important;
+}
+#ctrtRes {
+	font-size: 1.0625rem !important;
+}
+#itemInfoBtn {
+	font-size: 1.3125rem !important;
+}
+.itemViewName {
+	font-size: 1.3125rem !important;
+}
+.itemViewSea {
+	font-size: 1.3125rem !important;
+}
+#mapFundsInp {
+	font-size: 1rem !important;
+}
+.mapFndB {
+	font-size: 1.25rem !important;
+}
+.mapsVotes {
+	font-size: 0.9375rem !important;
+}
+.premCard {
+	font-size: 1.25rem !important;
+}
+.premSale {
+	font-size: 0.625rem !important;
+}
+.premVal {
+	font-size: 0.875rem !important;
+}
+#speedRunReset {
+	font-size: 1.25rem !important;
+}
+#speedRunTimer {
+	font-size: 3.125rem !important;
+}
+.speedRunItem {
+	font-size: 1.25rem !important;
+}
+.speedRunITim {
+	font-size: 1.25rem !important;
+}
+.speedRunMs {
+	font-size: 1.875rem !important;
+}
+.speedRunChn {
+	font-size: 1.25rem !important;
+}
+#speedRunInfo {
+	font-size: 1.375rem !important;
+}
+.shopSideSpnNm {
+	font-size: 2.5rem !important;
+}
+.shopSideSpnKR {
+	font-size: 1.75rem !important;
+}
+#shopMainNav {
+	font-size: 1.4375rem !important;
+}
+#shopMainSubT {
+	font-size: 1.6875rem !important;
+}
+#shopMainHedr {
+	font-size: 3.125rem !important;
+}
+#shopPremHed {
+	font-size: 1.875rem !important;
+}
+#shopPremSub {
+	font-size: 1.25rem !important;
+}
+.bundlPopNam {
+	font-size: 2.25rem !important;
+}
+.bundlPopInfo {
+	font-size: 1.75rem !important;
+}
+.bundlPopInfo > li {
+	font-size: 0.9375rem !important;
+}
+.bundlPopSec {
+	font-size: 1.625rem !important;
+}
+.bundlPopCurncs {
+	font-size: 1.375rem !important;
+}
+.bundlStrTxt {
+	font-size: 1.375rem !important;
+}
+.bundlStrSub {
+	font-size: 1.3125rem !important;
+}
+.storeHeader {
+	font-size: 1.5625rem !important;
+}
+#plySearch {
+	font-size: 1.0625rem !important;
+}
+.custBackArr {
+	font-size: 2.5rem !important;
+}
+.takeActionBtn {
+	font-size: 0.9375rem !important;
+}
+.tSearch {
+	font-size: 1.0625rem !important;
+}
+.selectorLabel {
+	font-size: 1.25rem !important;
+}
+.selRandom {
+	font-size: 3.125rem !important;
+}
+.custItNm {
+	font-size: 1rem !important;
+}
+.settSmall {
+	font-size: 1.0625rem !important;
+}
+.settLabel {
+	font-size: 0.8125rem !important;
+}
+.custLabel {
+	font-size: 0.875rem !important;
+}
+.callRegion {
+	font-size: 1rem !important;
+}
+.lockedClassText {
+	font-size: 0.75rem !important;
+}
+.selctFavBtn {
+	font-size: 1.75rem !important;
+}
+#raidReleaseTimer {
+	font-size: 0.9375rem !important;
+}
+#raidReleaseTimer {
+	font-size: 0.9375rem !important;
+}
+.eventTimer {
+	font-size: 0.875rem !important;
+}
+#clanDeclineAll {
+	font-size: 1.1875rem !important;
+}
+#updateAdVersion {
+	font-size: 0.9375rem !important;
+}
+.viewAllUpdates {
+	font-size: 1.5rem !important;
+}
+#loadTipsHolder {
+	font-size: 1.4375rem !important;
+}
+#loadGamNm {
+	font-size: 1.4375rem !important;
+}
+#loadInfoRHolder {
+	font-size: 1.25rem !important;
+}
+#loadInfoLHolder {
+	font-size: 1.25rem !important;
+}
+#lC-cont {
+	font-size: 1.875rem !important;
+}
+.followBack {
+	font-size: 0.9375rem !important;
+}
+.pSt {
+	font-size: 0.75rem !important;
+}
+.pSt strong {
+	font-size: 0.75rem !important;
+}
+.sprayCnt {
+	font-size: 0.75rem !important;
+}
+.spinValL {
+	font-size: 1.125rem !important;
+}
+.joinBtn {
+	font-size: 1.375rem !important;
+}
+.imagePop {
+	font-size: 1.25rem !important;
+}
+.badgePop {
+	font-size: 1.25rem !important;
+}
+.imageNewPop {
+	font-size: 1.25rem !important;
+}
+.openCollection {
+	font-size: 1.75rem !important;
+}
+.imageListItem {
+	font-size: 1.0625rem !important;
+}
+.imageActionB {
+	font-size: 1.5625rem !important;
+}
+.imageActionE {
+	font-size: 1.5rem !important;
+}
+.imageActionOvrl {
+	font-size: 0.75rem !important;
+}
+.imageListHeader {
+	font-size: 1.875rem !important;
+}
+.imageListAdd {
+	font-size: 1.125rem !important;
+}
+.pubHed {
+	font-size: 1.375rem !important;
+}
+.propControl {
+	font-size: 1rem !important;
+}
+#promoCode {
+	font-size: 1.375rem !important;
+}
+.codeBtn {
+	font-size: 1.25rem !important;
+}
+.promoCard {
+	font-size: 1.375rem !important;
+}
+.promoValH {
+	font-size: 1.5rem !important;
+}
+.promoValL {
+	font-size: 1.3125rem !important;
+}
+.reportDC {
+	font-size: 1.125rem !important;
+}
+.disconnectPop {
+	font-size: 1.25rem !important;
+}
+.plusOrMinus3 {
+	font-size: 2.9375rem !important;
+}
+/* TOOLTIP */
+.tooltip {
+	font-size: 0.75rem !important;
+}
+.tooltip2 {
+	font-size: 1.0625rem !important;
+}
+#rankedSoonTm {
+	font-size: 1rem !important;
+}
+.badgeCard {
+	font-size: 1.625rem !important;
+}
+.badgeName {
+	font-size: 0.8125rem !important;
+}
+.badgeDesc {
+	font-size: 0.625rem !important;
+}
+#ingameTable th {
+	font-size: 1rem !important;
+}
+#ingameTable td {
+	font-size: 0.9375rem !important;
+}
+.lvlPopHed {
+	font-size: 2.5rem !important;
+}
+.lvlPopInfo {
+	font-size: 1.5625rem !important;
+}
+.lvlPopAct {
+	font-size: 1.875rem !important;
+}
+#mobileUI .killStreakCnt {
+	font-size: 0.5625rem !important;
+}
+#imagesTabLayout {
+	font-size: 1rem !important;
+}
+.imageTab {
+	font-size: 1.25rem !important;
+}
+.advancedSlider:after {
+	font-size: 0.875rem !important;
+}
+.advSlidBig:after {
+	font-size: 1.1875rem !important;
+}
+.quickPlayMapName {
+	font-size: 0.875rem !important;
+}
+.streakSelH {
+	font-size: 1.375rem !important;
+}
+.streakCard {
+	font-size: 1.25rem !important;
+}
+.streakActionOvrl {
+	font-size: 0.75rem !important;
+}
+.streakActionB {
+	font-size: 1.5625rem !important;
+}
+.winCloseArr {
+	font-size: 2.8125rem !important;
+}
+#spinHistoryBtn {
+	font-size: 1.375rem !important;
+}
+#spinHistoryPop {
+	font-size: 2rem !important;
+}
+.spinHistoryHeader {
+	font-size: 1.875rem !important;
+}
+.spinHistoryClear {
+	font-size: 1.125rem !important;
+}
+.spinHistoryWarning {
+	font-size: 0.875rem !important;
+}
+.spinInfoText {
+	font-size: 1rem !important;
+}
+li {
+	font-size: 0.75rem !important;
+}
+#spinEndTime {
+	font-size: 0.75rem !important;
+}
+.clsStatCard {
+	font-size: 1.625rem !important;
+}
+.clsStatWeap {
+	font-size: 0.625rem !important;
+}
+.clsStatName {
+	font-size: 0.8125rem !important;
+}
+.clsStatLvl {
+	font-size: 0.75rem !important;
+}
+.clsStatXPBarV {
+	font-size: 0.5625rem !important;
+}
+.pListPing {
+	font-size: 2.3125rem !important;
+}
+.pListVoice {
+	font-size: 2.3125rem !important;
+}
+.eventPopName {
+	font-size: 2.5rem !important;
+}
+.eventPopChallBtn {
+	font-size: 1.25rem !important;
+}
+.eventPopInfo {
+	font-size: 1.25rem !important;
+}
+.eventPopInfo > li {
+	font-size: 0.9375rem !important;
+}
+.eventPopSkinsH {
+	font-size: 1.25rem !important;
+}
+.eventPopEnd {
+	font-size: 1.25rem !important;
+}
+.serverTimeLeft {
+	font-size: 0.75rem !important;
+}
+.bpLevelNum {
+	font-size: 1rem !important;
+}
+.bpCardRarityLabel {
+	font-size: 0.75rem !important;
+}
+.bpBtn {
+	font-size: 0.875rem !important;
+}
+.bpSeasonH {
+	font-size: 2rem !important;
+}
+.bpSeasonTime {
+	font-size: 0.75rem !important;
+}
+.bpLevelText {
+	font-size: 1.375rem !important;
+}
+.bpXPText {
+	font-size: 0.75rem !important;
+}
+.bpMenuBtn {
+	font-size: 1.25rem !important;
+}
+.bpClaimLabel {
+	font-size: 0.9375rem !important;
+}
+.bpClaimB {
+	font-size: 0.75rem !important;
+}
+.bpUnlockBtn {
+	font-size: 1.875rem !important;
+}
+.bp-unlock-header {
+	font-size: 1.25rem !important;
+}
+.bp-unlock-panel {
+	font-size: 1.875rem !important;
+}
+.bp-unlock-plus {
+	font-size: 1.125rem !important;
+}
+.bp-unlock-text {
+	font-size: 0.9375rem !important;
+}
+.bp-unlock-plus-text {
+	font-size: 1.0625rem !important;
+}
+.bp-unlock-btn {
+	font-size: 1.5625rem !important;
+}
+.bp-generic-header {
+	font-size: 2.5rem !important;
+}
+.bp-generic-info {
+	font-size: 1.25rem !important;
+}
+.bp-generic-btn {
+	font-size: 1.5625rem !important;
+}
+.bp-generic-btn-small {
+	font-size: 1.5625rem !important;
+}
+#bp-skip-num {
+	font-size: 1.5625rem !important;
+}
+.clanSubmitBtn {
+	font-size: 1.125rem !important;
+}
+.shopAction {
+	font-size: 1.3125rem !important;
+}
+.shopActionOvrl {
+	font-size: 0.75rem !important;
+}
+.shopActions {
+	font-size: 1.3125rem !important;
+}
+.spinErrorPop {
+	font-size: 1.25rem !important;
+}
+.popHeader,
+.dropsPopHeader {
+	font-size: 1.875rem !important;
+}
+.charmErrorPop {
+	font-size: 1.25rem !important;
+}
+.ticketCount {
+	font-size: 0.75rem !important;
+}
+#roundMessage {
+	font-size: 1.375rem !important;
+}
+#endBPLvl {
+	font-size: 1.4375rem !important;
+}
+#endBPProgText {
+	font-size: 1.1875rem !important;
+}
+#endBPGained {
+	font-size: 1.1875rem !important;
+}
+#endBPNextText {
+	font-size: 0.75rem !important;
+}
+#endBPUnlock {
+	font-size: 0.75rem !important;
+}
+.spinHistoryStats {
+	font-size: 1.125rem !important;
+}
+.spinHistoryStatsPop {
+	font-size: 1.25rem !important;
+}
+.spinHistoryTime {
+	font-size: 0.75rem !important;
+}
+.muteUserBtn {
+	font-size: 2.125rem !important;
+}
+#kpdCalls > * td,
+#kpdCalls > * th {
+	font-size: 1rem !important;
+}
+.scrimHeader {
+	font-size: 1.75rem !important;
+}
+.scrimSub {
+	font-size: 0.875rem !important;
+}
+.scrimDesc {
+	font-size: 0.8125rem !important;
+}
+#specKPDTxt {
+	font-size: 1.875rem !important;
+}
+#specKPDTxt > div {
+	font-size: 0.9375rem !important;
+}
+.bundlCreatorText,
+.battlepassCreatorText {
+	font-size: 0.875rem !important;
+}
+#bundlCreatorCode,
+#premiumCreatorCode,
+#battlepassCreatorCode {
+	font-size: 1.125rem !important;
+}
+#bundlCreatorCodeBtn,
+#premiumCreatorCodeBtn,
+#battlepassCreatorCodeBtn {
+	font-size: 1.125rem !important;
+}
+#miniMapOverlay {
+	font-size: 1.5625rem !important;
+}
+.ticketCard {
+	font-size: 1.375rem !important;
+}
+.ticketText {
+	font-size: 0.9375rem !important;
+}
+.bundlPopBuyB,
+.bundlPopBuyS,
+.bundlPopBuyC {
+	font-size: 1.5rem !important;
+}
+.bundlPopBuyS {
+	font-size: 1.5rem !important;
+}
+.bundlPopBuyC {
+	font-size: 1.875rem !important;
+}
+.custClear {
+	font-size: 0.875rem !important;
+}
+.death-row-center,
+.death-row-center-bottom,
+.death-row-center-self {
+	font-size: 2.1875rem !important;
+}
+.death-row-center-bottom {
+	font-size: 1.5625rem !important;
+}
+.death-row-center-self {
+	font-size: 3.125rem !important;
+}
+.death-row-kills {
+	font-size: 2.1875rem !important;
+}
+.death-row-user {
+	font-size: 1.25rem !important;
+}
+.death-row-user-stat {
+	font-size: 0.75rem !important;
+}
+.death-row-class-level {
+	font-size: 0.75rem !important;
+}
+.death-stats-row {
+	font-size: 1.25rem !important;
+}
+.bundleItmNm {
+	font-size: 0.9375rem !important;
+}
+.bundleItmMore {
+	font-size: 0.9375rem !important;
+}
+.bundleItmBtn {
+	font-size: 1rem !important;
+}
+.bundleItmBtnT {
+	font-size: 1rem !important;
+}
+#doubleXPHolder {
+	font-size: 1.5625rem !important;
+}
+.dxp-btn {
+	font-size: 1.5625rem !important;
+}
+.dxp-header {
+	font-size: 2.5rem !important;
+}
+.dxp-info {
+	font-size: 1rem !important;
+}
+.dropsActive {
+	font-size: 1.625rem !important;
+}
+.custPremReq {
+	font-size: 0.75rem !important;
+}
+.shopSpinValL {
+	font-size: 1.875rem !important;
+}
+.shopSpinValH {
+	font-size: 2.375rem !important;
+}
+.rewItemN {
+	font-size: 0.625rem !important;
+}
+.rewItemCnt {
+	font-size: 0.625rem !important;
+}
+#bottomLeftTeamType {
+	font-size: 0.75rem !important;
+}
+#bottomLeftTeamName {
+	font-size: 1rem !important;
+}
+#voiceIcon {
+	font-size: 2.25rem !important;
+}
+#expertModeBtn {
+	font-size: 1.1875rem !important;
+}
+#topLeftAdHolder {
+	font-size: 1rem !important;
+}
+#topRightAdHolder {
+	font-size: 1rem !important;
+}
+.abTestsPop {
+	font-size: 1.25rem !important;
+}
+.ftueUnlockClasses {
+	font-size: 1.5rem !important;
+}
+.pHoldNotif {
+	font-size: 1.5625rem !important;
+}
+.accountTwitchInput {
+	font-size: 1.375rem !important;
+}
+/* inline-styles */
+.game-announcement.svelte-fawdim {
+	font-size: 0.875rem !important;
+}
+.game-announcement.svelte-fawdim:before {
+	font-size: 0.75rem !important;
+}
+.ranked-matchmaking-status.svelte-3k0h7w {
+	font-size: 1.25rem !important;
+}
+.guest-earned-collect__header.svelte-lh5h5y {
+	font-size: 0.8125rem !important;
+}
+.guest-earned-collect__reward-value.svelte-lh5h5y {
+	font-size: 1.75rem !important;
+}
+.guest-earned-collect__xp-icon.svelte-lh5h5y span.svelte-lh5h5y {
+	font-size: 0.625rem !important;
+}
+.button-text.svelte-lh5h5y {
+	font-size: 1rem !important;
+}
+.button-subtext.svelte-lh5h5y {
+	font-size: 0.6875rem !important;
+}
+.helpTxtHol.svelte-1g1yfcp {
+	font-size: 1rem !important;
+}
+.scoreText.svelte-1g1yfcp {
+	font-size: 0.75rem !important;
+}
+.timeRemaining.svelte-1g1yfcp {
+	font-size: 0.75rem !important;
+}
+.buttonText.svelte-1g1yfcp {
+	font-size: 1rem !important;
+}
+.buttonSubtext.svelte-1g1yfcp {
+	font-size: 0.6875rem !important;
+}
+.claimedText.svelte-1g1yfcp {
+	font-size: 0.75rem !important;
+}
+.guestText.svelte-1g1yfcp {
+	font-size: 0.75rem !important;
+}
+.dailySpinToolTip.svelte-1g1yfcp {
+	font-size: 0.8125rem !important;
+}
+.spin-type-info.svelte-1g1yfcp {
+	font-size: 0.75rem !important;
+}
+.spin-name.svelte-1g1yfcp {
+	font-size: 0.8125rem !important;
+}
+.spin-description.svelte-1g1yfcp {
+	font-size: 0.6875rem !important;
+}
+.menu-item.svelte-uheepa {
+	font-size: 1rem !important;
+}
+.region-indicator.svelte-uheepa {
+	font-size: 1rem !important;
+}
+button.svelte-uheepa {
+	font-size: 2.5rem !important;
+}
+.matchmaking-info.svelte-uheepa {
+	font-size: 1rem !important;
+}
+.status-icon.svelte-uheepa {
+	font-size: 1.625rem !important;
+}
+.start-button.svelte-uheepa {
+	font-size: 1.5rem !important;
+}
+.loading.svelte-154w931,
+.error.svelte-154w931 {
+	font-size: 1.125rem !important;
+}
+.season-banner.svelte-154w931 {
+	font-size: 0.875rem !important;
+}
+.rank-name.svelte-154w931 {
+	font-size: 2rem !important;
+}
+.unranked-message.svelte-154w931 {
+	font-size: 0.875rem !important;
+}
+.warning-text.svelte-154w931 {
+	font-size: 0.875rem !important;
+}
+.quick-stat-value.svelte-154w931 {
+	font-size: 1.125rem !important;
+}
+.quick-stat-label.svelte-154w931 {
+	font-size: 0.75rem !important;
+}
+.description-container.svelte-154w931 p.svelte-154w931 {
+	font-size: 1rem !important;
+}
+.map-name.svelte-154w931 {
+	font-size: 0.875rem !important;
+}
+.emoji-icon.svelte-jxc66d {
+	font-size: 4rem !important;
+}
+.overlay-title.svelte-jxc66d {
+	font-size: 1.75rem !important;
+}
+.overlay-description.svelte-jxc66d {
+	font-size: 1rem !important;
+}
+.overlay-button.svelte-jxc66d {
+	font-size: 1.125rem !important;
+}
+
+/* inline-styles */
+#menuPingText {
+	font-size: 0.75rem !important;
+}
+.selRandom.blackShad {
+	font-size: 1.25rem !important;
+}
+.classHP span {
+	font-size: 0.75rem !important;
+}
+.setBodH b,
+.setBodH b span {
+	font-size: 1.625rem !important;
+}
+.bigMenTab.flex {
+	font-size: 1rem !important;
+}
+#shopHeader .bigMenTab {
+	font-size: 1rem !important;
+}
+#purchaseInfoTable
+	div[style='font-size:15px;text-align:center;margin-bottom:10px;margin-top:10px;color:#d4d4d4;'] {
+	font-size: 0.9375rem !important;
+}
+#purchaseInfoTable
+	div[style='color:#d4d4d4;font-size:16px;text-align:center;margin-bottom:10px;margin-top:10px;'] {
+	font-size: 1rem !important;
+}
+.vouchPop
+	div[style='color:rgba(255,255,255,0.7);margin-top:-5px;font-size:19px;text-align:center;margin-bottom:5px;'] {
+	font-size: 1.1875rem !important;
+}
+.challCrdMsg {
+	font-size: 1.6875rem !important;
+}
+#menuWindow .bigMenTab {
+	font-size: 1rem !important;
+}
+.statHolder .bigMenTab {
+	font-size: 1rem !important;
+}
+
+/* #endregion */
+
+html {
+	font-size: var(--font-size);
+}
+body {
+	font-size: 1rem;
+}
+
+/* REMOVAL */
+#mapInfoHolder,
+#headerRightSocial,
+#mainLogo,
+#homeStoreAd,
+#streamContainer,
+#streamContainerNew,
+#gameAnnouncementEl {
+	display: none !important;
+}
+/* /REMOVAL */
+
+/* LOGO */
+#gameNameHolder::after {
+	content: var(--logo-caption);
+
+	margin-top: 160px;
+
+	font-family: var(--font-logo);
+	font-size: 160px;
+	font-weight: 800;
+	color: var(--color-primary);
+
+	transform: rotate(-10deg);
+}
+/* /LOGO */
+
+/* custom name, clan tag */
+.leaderNameM {
+	visibility: hidden;
+	font-size: 0 !important;
+}
+
+.leaderNameM:after {
+	content: 'Deus' !important;
+	font-size: 18px !important;
+	visibility: visible !important;
+	color: white !important;
+}
+
+/* OVERLAY */
+#instructionHolder {
+	backdrop-filter: blur(6px);
+}
+/* /OVERLAY */
+
+/* tap to play */
+#instructions {
+	display: none;
+}
+
+/* HEADER */
+.headerBar {
+	background-color: var(--color-bg-special);
+}
+#signedOutHeaderBar .button {
+	border: var(--btn-border) !important;
+	background-color: var(--btn-bg);
+	border-radius: var(--radius);
+}
+#signedInHeaderBar,
+#signedOutHeaderBar {
+	top: 20px;
+	left: 20px;
+
+	background-color: var(--glass-bg);
+	padding: var(--block-padding) !important;
+	padding-right: var(--block-padding) !important;
+	border-radius: var(--radius) !important;
+	border: var(--border);
+}
+#menuUsernameContainer img {
+	border-radius: 50%;
+	border: var(--border);
+}
+#menuAccountUsername {
+	padding: 6px 0;
+	border: 0;
+	animation: none;
+}
+#menuAccountUsername:hover {
+	transform: scale(1);
+}
+#menuKRCount,
+#menuJNKCount {
+	color: var(--color-text-primary);
+}
+#menuKRCount span,
+#menuJNKCount span {
+	color: var(--color-primary) !important;
+}
+#signedInHeaderBar .progressBar {
+	background-color: transparent;
+	border: var(--border);
+}
+#signedInHeaderBar .progressBarInner {
+	background: none;
+	background-color: var(--color-primary);
+}
+#NewAltManager div span {
+	color: var(--color-primary) !important;
+}
+#NewAltManager div div span {
+	color: var(--color-text-primary) !important;
+}
+#mLevelCont {
+	background-color: transparent;
+	color: var(--color-primary) !important;
+}
+
+#headerRight {
+	top: 20px;
+	right: 20px;
+
+	background-color: var(--glass-bg);
+	padding: var(--block-padding);
+	border-radius: var(--radius);
+	border: var(--border);
+}
+#menuFPSDisplay {
+	color: var(--color-text-primary) !important;
+}
+#menuFPSDisplay span {
+	color: var(--color-primary) !important;
+}
+#matchInfoHolder {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+
+	padding: var(--block-padding);
+
+	background-color: var(--glass-bg);
+	border: var(--border);
+	border-radius: var(--radius);
+}
+#mapInfoHld {
+	font-size: 0;
+}
+#mapInfoHld > #mapInfo,
+#menuRegionLabel {
+	font-size: 1rem;
+}
+
+#menuPingDisplay,
+#menuFPSDisplay {
+	text-align: right;
+}
+#menuTimer {
+	color: var(--color-primary) !important;
+}
+
+/* spectate button */
+#spectButton {
+	top: 150px !important;
+	bottom: auto !important;
+	left: 212px !important;
+
+	display: flex;
+	align-items: center;
+
+	padding: var(--block-padding);
+
+	background-color: var(--glass-bg);
+	border: var(--border) !important;
+	border-radius: var(--radius);
+
+	transform: translate(0) !important;
+}
+#spectButton span[style='font-size:15px;color:rgba(255,255,255,.6)'] {
+	font-size: 1rem !important;
+	visibility: hidden;
+}
+#spectButton .switchsml {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	width: 100%;
+	height: 100%;
+
+	margin: 0 !important;
+
+	cursor: pointer;
+}
+#spectButton .sliderSml {
+	visibility: hidden;
+}
+#spectButton .sliderSml::before {
+	content: 'Spectate';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+
+	width: 100%;
+	height: 100%;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	font-size: 1rem;
+	color: var(--color-text-primary);
+
+	background-color: transparent;
+	border-radius: var(--radius);
+
+	transform: translate(0) !important;
+	visibility: visible;
+
+	transition: background-color 0.3s linear;
+}
+#spectButton .sliderSml:hover::before {
+	background-color: var(--color-primary);
+}
+#specBtn:checked + .sliderSml::before {
+	content: 'Spectating';
+
+	background-color: var(--color-primary);
+}
+
+/* spec ui */
+#specControlHolder,
+#specTimer,
+#specNames {
+	background-color: var(--glass-bg);
+	border: var(--border) !important;
+	border-radius: var(--radius);
+}
+/* /HEADER */
+
+/* MENU */
+#menuItemContainer {
+	top: auto;
+	left: 20px;
+	bottom: 20px;
+
+	background-color: var(--glass-bg);
+	border: var(--border);
+	border-radius: var(--radius);
+}
+#menuItemContainer .menuItem {
+	flex-grow: 0;
+
+	flex-direction: row;
+	gap: 20px;
+	padding: 30px 20px;
+}
+/* hide useless community button */
+#menuItemContainer
+	.menuItem[onclick='playSelect(),logBtnFRVR("community"),window.openCommunityMenu()'] {
+	display: none;
+}
+#menuItemContainer .menuItem .menuItemTitle {
+	display: none !important;
+
+	font-size: 2rem !important;
+	color: var(--color-primary) !important;
+}
+
+#menuItemContainer .menuItem .material-icons-outlined.menBtnIcn {
+	color: var(--color-primary) !important;
+}
+/* /MENU */
+
+/* CHAT */
+#chatHolder,
+#uiBase.onMenu #chatHolder {
+	width: 450px !important;
+
+	left: 200px;
+	bottom: 20px;
+
+	overflow: hidden;
+
+	transition: all 0.3s ease-in-out;
+}
+#uiBase.onEndScrn #chatHolder {
+	left: 20px;
+	bottom: 20px;
+}
+#uiBase.onGame #chatHolder {
+	left: 20px;
+	bottom: 130px;
+}
+#chatList {
+	background: none !important;
+	opacity: 1 !important;
+}
+#chatList .chatItem {
+	max-width: 100% !important;
+	margin: 10px 0 !important;
+	padding: 5px 10px;
+
+	font-size: 1rem !important;
+
+	border: var(--border);
+	border-radius: var(--radius-sm);
+	background-color: var(--glass-bg) !important;
+}
+.chatMsg {
+	color: var(--color-text-primary);
+}
+
+.chatMsg [style='color:#fff'] {
+	color: var(--color-text-primary) !important;
+}
+
+.chatMsg [style='color:#eb5656'] {
+	color: var(--color-primary) !important;
+}
+
+.chatMsg [style='color:#9eeb56'] {
+	color: var(--color-text-primary) !important;
+}
+
+.chatMsg [style='color:#76ff03'] {
+	color: var(--color-text-primary) !important;
+}
+
+.chatMsg[style='color: #ff0000;'] {
+	color: var(--color-text-primary) !important;
+}
+
+.chatMsg[style*='color:#fc03ec'] {
+	color: var(--color-text-primary) !important;
+}
+
+#chatInputHolder {
+	grid-template-columns: 30px 1fr;
+	gap: 20px;
+
+	background: none !important;
+	border-radius: var(--radius-sm);
+}
+#chatInput {
+	width: 100% !important;
+
+	padding: 12px 6px !important;
+
+	box-sizing: border-box !important;
+	background-color: var(--glass-bg);
+	border-radius: var(--radius-sm);
+}
+#chatSwitch {
+	color: var(--color-primary);
+}
+.greyInlineInner:last-of-type,
+#voiceIcon,
+#recTimer {
+	display: none;
+}
+
+.greyInner,
+.greyInlineInner,
+.greyInlineInnerMid {
+	display: flex;
+	align-items: center;
+	background: none !important;
+}
+
+/* /CHAT */
+
+/* GAME INFO */
+#tlInfHold {
+	top: 150px;
+	left: 20px;
+}
+#tlInfHold .youNewDiv:not(#battlepassAd):not(#dailySpinDiv) {
+	display: none !important;
+}
+#tlInfHold .youNewDiv {
+	min-width: auto;
+	width: fit-content;
+	padding: var(--block-padding);
+	margin: 0;
+
+	border: var(--border);
+	border-radius: var(--radius);
+	background-color: var(--glass-bg);
+
+	transition: background-color 0.3s linear;
+}
+#tlInfHold .youNewDiv:hover {
+	background-color: var(--color-primary);
+}
+#battlepassAd {
+	position: relative;
+}
+#bpAdIcon {
+	display: none;
+}
+.helpTxtHol {
+	margin-left: 0 !important;
+}
+.helpTxtHol:hover {
+	opacity: 1;
+}
+.helpTxtHol div[style='color:#fff'] {
+	display: none;
+}
+.helpTxtHol div[style='color:#dd90f9;font-size:15px'] {
+	font-size: 0 !important;
+}
+.helpTxtHol div[style='color:#dd90f9;font-size:15px']::before {
+	content: 'Battle Pass';
+
+	font-family: var(--font);
+	font-size: 1rem;
+	color: var(--color-text-primary);
+}
+#bpEndsIn {
+	position: absolute;
+	top: 3px;
+	left: 25px;
+	font-size: 0 !important;
+}
+#bpEndsInTimer {
+	font-size: 0.5rem !important;
+}
+
+/* daily spin */
+#dailySpinDiv {
+	margin-top: 15px !important;
+
+	padding: var(--block-padding) !important;
+	border: var(--border) !important;
+	border-radius: var(--radius) !important;
+	background-color: var(--glass-bg) !important;
+}
+#dailySpinIcon {
+	display: none !important;
+}
+
+/* /GAME INFO */
+
+/* CENTER (CONTROL BUTTONS) */
+#subLogoButtons {
+	top: 20px;
+	right: 20px;
+	bottom: auto;
+	transform: translate(0);
+
+	width: fit-content;
+	margin-left: auto;
+
+	padding: 0;
+}
+#subLogoButtons .button {
+	position: absolute;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	text-align: center;
+
+	padding: var(--block-padding) !important;
+
+	background-color: var(--glass-bg);
+	border-radius: var(--radius);
+	border: var(--border) !important;
+
+	transition: background-color 0.3s linear;
+}
+#subLogoButtons .button:hover {
+	transform: scale(1);
+	background-color: var(--color-primary);
+}
+#subLogoButtons .button {
+	right: 0;
+}
+#subLogoButtons .button:nth-of-type(2) {
+	top: 150px;
+}
+#subLogoButtons .button:nth-of-type(3) {
+	top: 250px;
+}
+#subLogoButtons .button:nth-of-type(4) {
+	top: 350px;
+}
+#subLogoButtons .button:nth-of-type(5) {
+	top: 450px;
+}
+#subLogoButtons .button:nth-of-type(6) {
+	top: 550px;
+}
+#subLogoButtons .button:nth-of-type(7) {
+	top: 650px;
+}
+/* /buttons style v2 */
+
+/* /CENTER (CONTROL BUTTONS) */
+
+/* POPUPS */
+#genericPop {
+	padding: var(--block-padding);
+
+	background-color: var(--pop-bg);
+	backdrop-filter: var(--pop-blur);
+	border: var(--border);
+	border-radius: var(--radius);
+}
+
+/* select server */
+#windowHolder {
+	background: none !important;
+}
+#menuWindow {
+	padding: var(--block-padding);
+
+	background-color: var(--pop-bg) !important;
+	backdrop-filter: var(--pop-blur);
+	border: var(--border);
+	border-radius: var(--radius);
+	box-shadow: var(--color-popup-shadow) !important;
+}
+#windowHolder[style='display: block;'] {
+	transform: scale(1);
+	/* transition: .4s cubic-bezier(0.44, 0.01, 0.26, 1.93); */
+	animation: popupShow 0.6s cubic-bezier(0.44, 0.01, 0.26, 1.93);
+}
+@keyframes popupShow {
+	0% {
+		transform: scale(0);
+	}
+	80% {
+		transform: scale(1.1);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+#referralHeader,
+#itemSearchH,
+#hostHeader,
+.serverHeader {
+	background-color: transparent !important;
+}
+.serverHeader {
+	position: static;
+}
+
+/* form */
+#menuWindow input,
+#loadoutSelect,
+#itemSearch,
+.inputGrey2 {
+	color: var(--color-text-primary);
+
+	background-color: var(--input-bg) !important;
+	border-radius: var(--radius);
+	border-color: var(--color-bg-special) !important;
+
+	transition: 0.3s linear;
+}
+#menuWindow input:focus {
+	border-color: var(--color-primary);
+}
+#menuWindow input::placeholder {
+	color: var(--color-text-primary);
+	opacity: 0.7;
+}
+.slider,
+.slider2,
+.advancedSlider {
+	background-color: var(--color-bg-primary);
+}
+.setHed .slider,
+.slider2 {
+	background-color: var(--color-text-primary);
+}
+.setHed .slider::before,
+.slider2::before {
+	background-color: var(--color-bg-primary);
+}
+
+input:checked + .slider,
+input:checked + .slider2,
+input:checked + .advancedSlider {
+	background-color: var(--color-primary);
+}
+
+input[type='color'] {
+	border-color: var(--color-bg-primary);
+}
+.sliderVal {
+	border-color: var(--color-bg-primary) !important;
+}
+.sliderVal:focus {
+	border-color: var(--color-primary) !important;
+}
+.sliderM::-webkit-slider-thumb {
+	background: var(--color-bg-primary);
+}
+.sliderM::-moz-range-thumb {
+	background: var(--color-bg-primary);
+}
+.openCollection {
+	background-color: var(--color-bg-primary) !important;
+}
+.settingsBtn {
+	border-radius: var(--radius-sm);
+	background-color: var(--color-primary);
+
+	transition: transform 0.3s linear;
+}
+.settingsBtn:hover {
+	transform: scale(1.1);
+}
+#hostMenuBtn {
+	background-color: var(--color-primary);
+}
+#hostMenuBtn .material-icons {
+	color: var(--color-bg-primary) !important;
+}
+/* /form */
+
+#menuWindow .setBodH {
+	background-color: var(--color-bg-special) !important;
+}
+#menuWindow #accResp {
+	color: var(--color-text-primary) !important;
+}
+#menuWindow #accResp a {
+	color: var(--color-primary) !important;
+}
+
+/* buttons register/login */
+#menuWindow
+	div[style='width:100%;text-align:center;margin-top:10px;background-color:rgba(0,0,0,0.3);padding-top:10px;padding-bottom:20px;'] {
+	background-color: transparent !important;
+}
+#menuWindow
+	div[style='width:100%;text-align:center;margin-top:10px;background-color:rgba(0,0,0,0.3);padding-top:10px;padding-bottom:20px;']
+	.accBtn {
+	border: var(--border);
+	border-radius: var(--radius);
+	background-color: transparent;
+}
+#menuWindow .buttonP,
+#menuWindow .buttonG {
+	border-color: var(--color-primary) !important;
+}
+
+/* /select server */
+
+/* game settings */
+.settingsHeader {
+	position: static;
+	padding-right: 20px;
+	background: var(--color-bg-special) !important;
+}
+#settSearch {
+	width: 200px;
+}
+/* /game settings */
+
+/* ranked menu */
+.rankedMenuModal .menu-container {
+	background-color: #fff;
+}
+/* /ranked menu */
+
+/* profile */
+.bigMenTabs {
+	margin-top: 0;
+}
+.setHed,
+.setHedS {
+	padding: 10px 10px 10px 25px;
+	background-color: var(--color-bg-primary);
+	border: 0;
+	border-radius: var(--radius);
+}
+.setHed:hover {
+	background-color: var(--color-bg-primary);
+}
+.setHed .plusOrMinus {
+	display: none;
+}
+.settName {
+	border-bottom: 2px solid var(--color-bg-primary);
+}
+
+/* xpbar */
+.xpBar {
+	margin-bottom: 15px;
+
+	background-color: var(--color-bg-primary);
+	border-radius: var(--radius);
+	overflow: hidden;
+}
+.xpBarB {
+	background-image: none;
+	background-color: var(--color-primary);
+	border-radius: var(--radius);
+}
+
+/* profile pic */
+#profilePicM {
+	background-color: var(--color-bg-special);
+	border-color: var(--color-bg-primary);
+}
+#menuWindow a,
+#menuWindow a:visited {
+	color: var(--color-primary);
+}
+#menuWindow .setBodH a {
+	color: var(--color-primary);
+}
+
+/* tabs */
+.bigMenTabs,
+#settingsTabLayout,
+.menu-container.svelte-uheepa {
+	overflow: hidden;
+
+	background-color: var(--color-bg-primary) !important;
+	border-radius: var(--radius);
+}
+.bigMenTab,
+.bigMenTab .material-icons,
+.settingTab,
+.menu-item.svelte-uheepa {
+	color: var(--color-text-primary) !important;
+	background-color: var(--color-bg-special);
+	transition: color 0.3s linear;
+}
+.bigMenTab:hover,
+.bigMenTab:hover .material-icons,
+.bigMenTab:hover .material-icons-outlined,
+.settingTab:hover,
+.menu-item.svelte-uheepa:hover {
+	color: var(--color-primary) !important;
+	border-bottom: 0 !important;
+	box-shadow: none;
+}
+.bigMenTab.bigMenTabA,
+.bigMenTab.bigMenTabA .material-icons,
+.bigMenTab.bigMenTabA .material-icons-outlined,
+.settingTab.tabANew,
+.settingTab.tabANew:hover,
+.menu-item.active.svelte-uheepa {
+	color: var(--color-primary) !important;
+	border-bottom: 0 !important;
+	box-shadow: none;
+}
+/* /tabs */
+
+/* /profile */
+
+/* shop */
+.shopCard {
+	background-color: var(--color-bg-special) !important;
+	border-radius: var(--radius);
+}
+#shopMainSellB,
+#shopSideSellB {
+	border-radius: var(--radius) !important;
+}
+.bundleCrd {
+	background-color: var(--color-bg-primary);
+	border-radius: var(--radius-sm) !important;
+}
+/* /shop */
+
+/* challenges */
+.challMapCrd {
+	border-radius: var(--radius-sm);
+	border-color: var(--color-bg-primary);
+
+	transition: transform 0.3s linear, border-color 0.3s linear;
+}
+.challMapCrd:hover {
+	border-color: var(--color-primary);
+}
+.chalImgC,
+.chalRewSkn {
+	background-color: var(--color-bg-special);
+}
+.chalXPBar {
+	background-color: var(--color-bg-primary);
+	border-radius: var(--radius);
+	overflow: hidden;
+}
+.chalXPBarC {
+	background-image: none;
+	background-color: var(--color-primary);
+	border-radius: var(--radius);
+}
+/* /challenges */
+
+/* customize */
+#selectorContainer {
+	box-sizing: border-box;
+	padding: 5px;
+	background-color: var(--color-bg-special);
+}
+.selectorItem {
+	border-radius: var(--radius);
+
+	transition: 0.3s linear;
+}
+.selectorItem:hover {
+	background-color: var(--color-bg-primary);
+}
+.selectorItem.selectedItem {
+	border-color: var(--color-primary) !important;
+}
+.skinCard,
+.noBtnCard,
+.streakCard {
+	background-color: var(--color-bg-special) !important;
+	border-radius: var(--radius);
+
+	transition: background-color 0.3s linear;
+}
+.custContainer {
+	border-color: var(--color-bg-primary) !important;
+	border-radius: var(--radius);
+	overflow: hidden;
+
+	transition: border-color 0.3s linear, background-color 0.3s linear;
+}
+.custContainer:hover {
+	border-color: var(--color-primary) !important;
+}
+.custContainer .custIcon {
+	transition: transform 0.3s linear;
+}
+.custContainer:hover .custIcon {
+	transform: scale(1.1);
+}
+
+.classCard {
+	background-color: var(--color-bg-special);
+	border-radius: var(--radius);
+
+	transition: background-color 0.3s linear;
+}
+.classCard:hover {
+	background-color: var(--color-bg-primary);
+}
+.classCard img {
+	transition: transform 0.3s linear;
+}
+.classCard:hover img {
+	transform: scale(1.2);
+}
+
+.classXPBar {
+	background-color: var(--color-bg-primary);
+}
+.clsXPBarC {
+	background-color: var(--color-primary);
+}
+/* /customize */
+
+/* junkyard */
+.crftRcpeCrd,
+.craftRcIcn {
+	border-radius: var(--radius);
+	background-color: var(--color-bg-special);
+}
+.crftItmReq {
+	background-color: var(--color-bg-special);
+	border-radius: var(--radius-sm);
+}
+.crftTim {
+	border-radius: var(--radius-sm);
+	background-color: var(--color-bg-primary);
+}
+
+/* host game */
+.hostHeader,
+#stickyHostH {
+	background-color: var(--color-bg-primary) !important;
+}
+/* /POPUPS */
+
+/* MENU CLASS */
+#menuClassContainer {
+	bottom: 20px !important;
+}
+#menuClassContainer:hover #classPreviewCanvas {
+	animation: previewCanvasBubbleUp 0.6s forwards ease-in-out;
+}
+#menuClassContainer #bubbleContainer {
+	display: none;
+}
+#classPreviewCanvas {
+	margin-bottom: -140px;
+
+	filter: drop-shadow(0 0 1rem var(--color-primary));
+	transform: translateY(110%);
+}
+#customizeButton {
+	border-radius: var(--radius) !important;
+	border: var(--border) !important;
+	background: var(--glass-bg);
+
+	transition: background-color 0.3s linear;
+}
+#customizeButton:hover {
+	transform: scale(1);
+	background-color: var(--color-primary);
+}
+#customizeButton span {
+	display: none;
+}
+#menuClassIcn {
+	border: var(--border);
+	border-radius: var(--radius);
+	background: var(--glass-bg);
+}
+
+@keyframes previewCanvasBubbleUp {
+	0% {
+		transform: translateY(110%);
+	}
+	70% {
+		transform: translateY(-100px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+/* MENU CLASS */
+
+/* DISCONNECTED */
+.instructionsHeader {
+	background-color: transparent !important;
+	border-bottom-color: var(--color-primary);
+
+	box-shadow: none;
+}
+#instructionsUpdate {
+	padding: var(--block-padding);
+
+	color: var(--color-text-primary) !important;
+
+	background-color: var(--glass-bg) !important;
+	backdrop-filter: blur(var(--glass-blur));
+	border: var(--border);
+	border-radius: var(--radius);
+}
+#instructionsUpdate div {
+	color: var(--color-text-primary) !important;
+}
+.instructionsTabs {
+	box-shadow: none;
+	background-color: transparent !important;
+}
+.instructionsTab {
+	color: var(--color-text-primary) !important;
+
+	border-top-color: var(--color-primary);
+	transition: 0.3s linear;
+}
+.instructionsTab:hover {
+	color: var(--color-primary) !important;
+}
+/* /DISCONNECTED */
+
+/* scrollbar */
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	border-radius: var(--radius-sm);
+	background-color: var(--color-bg-special);
+}
+::-webkit-scrollbar {
+	width: 12px;
+}
+::-webkit-scrollbar-thumb {
+	border-radius: var(--radius-sm);
+	background: var(--color-primary);
+	-webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.6);
+	box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.6);
+}
+
+/* game ui */
+/* leaderboard */
+.centerLeaderContainer {
+	border: var(--border);
+	border-radius: var(--radius);
+	background-color: var(--glass-bg);
+	backdrop-filter: blur(var(--glass-blur));
+}
+.centerLeaderContainerInner {
+	background-color: var(--color-bg-special);
+}
+.newLeaderNameM {
+	color: var(--color-primary);
+}
+
+/* top left */
+#topLeftHolder {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+#topLeftMain {
+	width: fit-content;
+}
+#topLeftMatchData {
+}
+#matchInfo,
+#timerHolder {
+	padding: 5px !important;
+
+	background-color: var(--glass-bg) !important;
+	border: var(--border);
+	border-radius: var(--radius-sm) !important;
+}
+#timerHolder.topLeftOld {
+	float: left;
+	margin-bottom: 0 !important;
+}
+#timerHolder {
+	padding: 9px !important;
+	margin: 0 !important;
+	margin-bottom: 10px;
+
+	background-color: var(--color-bg-special);
+}
+#timerInner.topLeftOld {
+	min-width: 140px;
+	padding: 0 !important;
+	margin: 0 !important;
+
+	text-align: center;
+
+	background-color: var(--color-bg-special);
+}
+#timerVal.topLeftOld {
+	padding-left: 0;
+}
+#timerVal {
+	color: var(--color-primary);
+	text-align: center;
+
+	text-shadow: -1px -1px 0 var(--color-bg-primary),
+		1px -1px 0 var(--color-bg-primary), -1px 1px 0 var(--color-bg-primary),
+		1px 1px 0 var(--color-bg-primary) !important;
+}
+#timerIcon {
+	display: none !important;
+}
+#matchInfo {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 10px !important;
+}
+#matchInfo.topLeftOld {
+	margin-left: 20px !important;
+}
+
+#topLeftData {
+	/* margin-left: 10px; */
+}
+.debugInfo {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+
+	width: fit-content;
+}
+#fpsDisplay,
+#pingDisplay {
+	padding: 5px;
+
+	background-color: var(--glass-bg) !important;
+	border: var(--border);
+	border-radius: var(--radius-sm);
+}
+#fpsDisplay span,
+#pingDisplay span {
+	color: var(--color-primary) !important;
+}
+
+#teamScores,
+#voteToKick,
+#voteToForfeit,
+#networkLag,
+#speakerDisplay,
+#skinRewardHolder {
+	background-color: var(--glass-bg) !important;
+	border: var(--border);
+	border-radius: var(--radius-sm);
+}
+
+/* top right */
+#topRight {
+}
+.topRightCounters {
+	display: flex;
+	justify-content: flex-end;
+	gap: 10px;
+}
+.topRightCounters .statIcon {
+	background-color: var(--glass-bg) !important;
+	border: var(--border);
+	border-radius: var(--radius-sm);
+}
+#killsVal,
+#deathsVal,
+#streakVal,
+#myScoreVal,
+#kdVal {
+	color: var(--color-primary);
+}
+
+.killfeedItem,
+#leaderboardHolder {
+	background-color: var(--glass-bg) !important;
+	border: var(--border);
+	border-radius: var(--radius-sm);
+}
+.killfeedMsg {
+	background-color: var(--color-bg-special);
+}
+
+#leaderContainer {
+	background: none;
+}
+
+/* bottom left (profile) */
+#bottomLeftHolder {
+	width: fit-content;
+	height: auto;
+
+	display: flex;
+	align-items: center;
+	gap: 30px;
+
+	padding: 5px;
+}
+#bottomLeftPlayer {
+	position: relative;
+
+	display: inline-block;
+
+	background-color: var(--color-bg-special);
+	box-shadow: none;
+}
+#bottomLeftPlayerLeft {
+	display: none;
+}
+#bottomLeftPlayerMid {
+	width: 100%;
+
+	display: flex;
+}
+#bottomLeftTeamHolder {
+	display: none;
+}
+#bottomLeftHealthBar {
+	width: 300px;
+	height: 60px;
+
+	column-gap: 0;
+	padding: 0;
+
+	background-color: var(--glass-bg);
+	border-radius: var(--radius);
+	overflow: hidden;
+}
+.nHealthBarSeg {
+	height: 100%;
+	margin-left: -1px;
+
+	background: none;
+}
+.nHpBSeg {
+	border-radius: 0;
+
+	background-color: var(--color-primary) !important;
+}
+#bottomLeftChallIcon {
+	display: none;
+}
+#bottomLeftPlayerRight {
+	position: absolute;
+	left: 30px;
+	top: 50%;
+	transform: translateY(-50%);
+
+	padding: 0;
+	margin: 0;
+
+	font-family: var(--font);
+	font-size: 1.5rem;
+	color: var(--color-text-primary);
+
+	background: none;
+}
+#zPerksHolder {
+	margin-left: 30px;
+}
+
+/* bottom right */
+#bottomRight {
+}
+#ammoHolder {
+	padding: 5px;
+
+	background-color: var(--glass-bg) !important;
+	border: var(--border);
+	border-radius: var(--radius);
+}
+#ammoIcon {
+	display: none;
+}
+#ammoVal,
+#ammoMax {
+	color: var(--color-primary);
+}
+#ammoMax {
+	opacity: 0.5;
+}
+
+/* weapon holder */
+#weapHolder {
+	right: 20px;
+	bottom: 200px;
+}
+.weapItem,
+.weapItemInner {
+	background-color: transparent;
+}
+.weapItem[style='opacity:0.5;'] {
+	display: none;
+}
+.weapItemInner {
+	margin: 0;
+	padding: 0;
+}
+.weapKey {
+	display: none;
+}
+.weapSkin {
+	display: none;
+}
+.weapStreakHolder {
+	background-color: transparent;
+}
+.weapStreakInner {
+	background-color: transparent;
+}
+.weapStreakInner span:last-child {
+	color: var(--color-primary) !important;
+}
+.weapStreak {
+	color: var(--color-primary);
+}
+.weapIcon {
+	width: 150px;
+	height: auto;
+
+	aspect-ratio: 2 / 1;
+
+	filter: drop-shadow(1px 1px 5px var(--color-primary));
+}
+
+#killStreakHolder {
+}
+#killStreakItem {
+	padding: 5px;
+
+	background-color: var(--glass-bg) !important;
+	border: var(--border);
+	border-radius: var(--radius-sm);
+}
+#killStreakItemInner {
+	background-color: var(--color-bg-special);
+}
+#killStreakKey {
+	font-size: 0.7rem;
+
+	background-color: var(--color-bg-primary);
+}
+
+/* pc7 */
+#PC7WaterMark1,
+#PC7WaterMark2 {
+	display: none !important;
+}
+#confirmBtn,
+#declineBtn {
+	border: 0;
+	border-radius: var(--radius);
+}
