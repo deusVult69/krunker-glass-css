@@ -17,7 +17,7 @@ Custom css for krunker.io game.
 ![Settings](https://github.com/deusVult69/krunker-glass-css/blob/main/screenshots/glass-settings.jpg?raw=true "Settings")
 
 *Customization*
-![Customization](https://github.com/deusVult69/krunker-glass-css/blob/main/screenshots/glass-custom.jpg?raw=true"customization screen")
+![Customization](https://github.com/deusVult69/krunker-glass-css/blob/main/screenshots/glass-custom.jpg?raw=true "customization screen")
 
 ## How to Use
 To always have the latest version: download or copy `main_custom.css`. 
