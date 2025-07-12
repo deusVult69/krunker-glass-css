@@ -54,8 +54,23 @@
 
 	/* customization */
 	--logo-caption: 'Meow clan';
-	--clan-tag: 'm3ow';
+
+	/* customize */
+	/* to apply these, search these vars and uncomment block  */
 	--ign: 'deus';
+	--clan-tag: '[m3ow]';
+	--clan-tag-color: linear-gradient(
+		90deg,
+		#ff0000,
+		#ff7300,
+		#fffb00,
+		#48ff00,
+		#00ffd5,
+		#002bff,
+		#7a00ff,
+		#ff00c8,
+		#ff0000
+	);
 }
 
 * {
@@ -2043,18 +2058,92 @@ body {
 }
 /* /LOGO */
 
-/* custom name, clan tag */
-.leaderNameM {
+/* CUSTOMIZE */
+/* #menuAccountUsername{
+	font-size: 0;
+	visibility: hidden;
+}
+#menuAccountUsername::before{
+	content: var(--ign);
+	font-size: 1rem;
+	visibility: visible;
+}
+.endTableN[style="color:#fff"]{
+	font-size: 0;
+	visibility: hidden;
+}
+.endTableN[style="color:#fff"]::before{
+	content: var(--ign);
+	font-size: 1.25rem;
+	visibility: visible;
+}
+.endTableN[style="color:#fff"] span{
+	font-size: 0;
+	visibility: hidden;
+}
+.endTableN[style="color:#fff"] span::before{
+	content: var(--clan-tag);
+	display: inline;
+
+	margin-left: 5px;
+	
+  color: transparent;
+	font-size: 1.25rem;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+
+	background: var(--clan-tag-color);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  background-clip: text;
+
+	visibility: visible;
+
+  animation: rainbow 4s linear infinite;
+}
+
+.newLeaderNameM {
 	visibility: hidden;
 	font-size: 0 !important;
 }
-
-.leaderNameM:after {
-	content: 'Deus' !important;
-	font-size: 18px !important;
-	visibility: visible !important;
-	color: white !important;
+.newLeaderNameM::before {
+	content: var(--ign);
+	display: inline;
+	font-size: 0.9375rem;
+	visibility: visible;
+	color: white;
 }
+.newLeaderNameM span{
+	visibility: hidden;
+	font-size: 0 !important;
+}
+.newLeaderNameM span::after{
+	content: var(--clan-tag);
+	display: inline;
+
+	margin-left: 5px;
+	
+  color: transparent;
+	font-size: 0.9375rem;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+
+	background: var(--clan-tag-color);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  background-clip: text;
+
+	visibility: visible;
+
+  animation: rainbow 4s linear infinite;
+}
+@keyframes rainbow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 400% 50%;
+  }
+} */
+/* /CUSTOMIZE */
 
 /* OVERLAY */
 #instructionHolder {
