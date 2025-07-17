@@ -2545,8 +2545,12 @@ body {
 .serverHeader {
 	position: static;
 }
-
 /* form */
+#itemSearchH{
+	display: grid;
+	grid-template-columns: auto 1fr auto;
+}
+	
 #menuWindow input,
 #loadoutSelect,
 #itemSearch,
@@ -2565,6 +2569,12 @@ body {
 #menuWindow input::placeholder {
 	color: var(--color-text-primary);
 	opacity: 0.7;
+}
+#itemSearch{
+	margin-bottom: 0;
+}
+.custBack, .winClose{
+	border-radius: var(--radius);
 }
 .slider,
 .slider2,
