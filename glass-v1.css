@@ -2377,9 +2377,9 @@ body {
 	color: var(--color-primary);
 }
 
-.greyInner,
-.greyInlineInner,
-.greyInlineInnerMid {
+#chatInputHolder  .greyInner,
+#chatInputHolder  .greyInlineInner,
+#chatInputHolder  .greyInlineInnerMid {
 	display: flex;
 	align-items: center;
 	background: none !important;
