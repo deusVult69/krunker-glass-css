@@ -2455,7 +2455,9 @@ body {
 	padding: 0;
 }
 #subLogoButtons .button {
-	position: absolute;
+	position: static;
+
+	width: fit-content;
 
 	display: flex;
 	justify-content: center;
@@ -2463,37 +2465,19 @@ body {
 
 	text-align: center;
 
+	margin-left: auto;
+	margin-bottom: 20px;
 	padding: var(--block-padding) !important;
 
 	transition: background-color 0.3s linear;
+	
 }
+#subLogoButtons .button:last-child{
+	margin-bottom: 0;
 #subLogoButtons .button:hover {
 	transform: scale(1);
 	background-color: var(--color-primary);
 }
-#subLogoButtons .button {
-	right: 0;
-}
-#subLogoButtons .button:nth-of-type(2) {
-	top: 150px;
-}
-#subLogoButtons .button:nth-of-type(3) {
-	top: 250px;
-}
-#subLogoButtons .button:nth-of-type(4) {
-	top: 350px;
-}
-#subLogoButtons .button:nth-of-type(5) {
-	top: 450px;
-}
-#subLogoButtons .button:nth-of-type(6) {
-	top: 550px;
-}
-#subLogoButtons .button:nth-of-type(7) {
-	top: 650px;
-}
-/* /buttons style v2 */
-
 /* /CENTER (CONTROL BUTTONS) */
 
 /* POPUPS */
