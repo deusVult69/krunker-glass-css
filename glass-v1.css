@@ -2474,6 +2474,7 @@ body {
 }
 #subLogoButtons .button:last-child{
 	margin-bottom: 0;
+}
 #subLogoButtons .button:hover {
 	transform: scale(1);
 	background-color: var(--color-primary);
