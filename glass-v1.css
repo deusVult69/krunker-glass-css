@@ -2958,6 +2958,9 @@ input#settSearch {
 }
 
 /* game ui */
+.greyInner, .greyInlineInner, .greyInlineInnerMid{
+	background-color: none;
+}
 /* leaderboard */
 .centerLeaderContainer {
 	backdrop-filter: blur(var(--glass-blur));
