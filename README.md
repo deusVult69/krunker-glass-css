@@ -1,4 +1,4 @@
-# Krunker GlassV1 css
+# Krunker css - GlassV1
 Custom css for krunker.io game.
 
 > Compatible with the latest Krunker version.
