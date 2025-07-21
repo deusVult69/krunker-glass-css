@@ -2959,7 +2959,7 @@ input#settSearch {
 
 /* game ui */
 .greyInner, .greyInlineInner, .greyInlineInnerMid{
-	background-color: none;
+	background: none;
 }
 /* leaderboard */
 .centerLeaderContainer {
