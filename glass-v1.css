@@ -2011,7 +2011,7 @@ body {
 .killfeedItem,
 #leaderboardHolder,
 #ammoHolder,
-#killStreakItem {
+.killStreakItem {
 	background-color: var(--glass-bg);
 	border-radius: var(--radius) !important;
 	border: var(--border) !important;
@@ -3149,6 +3149,9 @@ input#settSearch {
 }
 #ammoMax {
 	opacity: 0.5;
+}
+.killStreakItemInner{
+	background: none;
 }
 
 /* weapon holder */
