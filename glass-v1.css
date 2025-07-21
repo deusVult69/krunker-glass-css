@@ -3199,17 +3199,16 @@ input#settSearch {
 	background-color: var(--color-bg-primary);
 }
 
-/* end ui */
 .endCard{
   background-color: var(--pop-bg);
   backdrop-filter: blur(var(--glass-blur));
   border-radius: var(--radius);
 }
-.tabHolder{
-  background: none;
-}
-#endTable{
-  background: none;
+#tabHolder,
+#endTable, 
+.endSection,
+.tabBody div {
+  border-radius: var(--radius-sm) !important;
 }
 
 /* pc7 */
