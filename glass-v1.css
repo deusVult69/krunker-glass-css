@@ -1973,7 +1973,9 @@ body {
 .weapKey,
 .weapSkin,
 #PC7WaterMark1,
-#PC7WaterMark2 {
+#PC7WaterMark2,
+#topRightAdHolder,
+#aHolder {
 	display: none !important;
 }
 /* /REMOVAL */
