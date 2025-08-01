@@ -2975,6 +2975,10 @@ input#settSearch {
 .centerLeaderContainerInner {
 	background-color: var(--color-bg-special);
 }
+.newLeaderTeam{
+	margin-top: -6px;
+	border-radius: var(--radius);
+}
 .newLeaderNameM {
 	color: var(--color-primary);
 }
