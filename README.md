@@ -20,7 +20,10 @@ Custom css for krunker.io game.
 ![Customization](https://github.com/deusVult69/krunker-glass-css/blob/main/screenshots/glass-custom.jpg?raw=true "customization screen")
 
 ## How to Use
-To always have the latest version: download or copy `main_custom.css`. 
+To always have the latest version: download or copy `main_custom.css`.  
+
+---
+If you want animations (switching between menu and game ui) you can use this file `main_custom_anim.css`.     
 
 ---
 Found bugs or issues? Feel free to dm me on discord - `hardypr0`.  
