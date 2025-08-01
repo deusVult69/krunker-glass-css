@@ -2323,6 +2323,11 @@ body {
 	left: 20px;
 	bottom: 130px;
 }
+#uiBase.onCompMenu #chatHolder{
+	left: 20px;
+	bottom: 150px;
+}
+
 #chatList {
 	background: none !important;
 	opacity: 1 !important;
@@ -3218,4 +3223,36 @@ input#settSearch {
 #declineBtn {
 	border: 0;
 	border-radius: var(--radius);
+}
+
+/* comp */
+#compClassPHolder,
+.compTScrB,
+#compBtnLst,
+#roundsDisplay{
+	background-color: var(--glass-bg) !important;
+}
+.roundScrV{
+	background: none;
+}
+
+.compClassPItm,
+.compSwpTmB,
+.compPLstIcn,
+.compMenBtnS,
+.compPlWpIcn,
+#roundsDisplay{
+	border-radius: var(--radius);
+	overflow: hidden;
+}
+
+#returnHolder{
+	background-color: var(--glass-bg);
+	border-radius: var(--radius);
+	border: 0;
+
+	transition: background-color .3s linear;
+}
+#returnHolder:hover{
+	background-color: var(--color-primary);
 }
