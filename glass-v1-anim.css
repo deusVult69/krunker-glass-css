@@ -3493,3 +3493,20 @@ input#settSearch {
 		transform: translate(-50%, 0) scale(1);
 	}
 }
+
+/* web notify */
+.webpush-container{
+	margin: 15px 0 !important;
+	background-color: var(--glass-bg) !important;
+	border-radius: var(--radius) !important;
+}
+.webpush-btn{
+	border-radius: var(--radius-sm) !important;
+	background-color: var(--color-text-primary) !important;
+}
+.webpush-btn:hover{
+	background-color: var(--color-primary) !important;
+}
+.webpush-error{
+	border-radius: var(--radius-sm) !important;
+}
