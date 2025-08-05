@@ -3270,6 +3270,9 @@ input#settSearch {
 	background-color: var(--glass-bg) !important;
 	border-radius: var(--radius) !important;
 }
+.webpush-details-toggle:hover{
+	color: var(--color-primary) !important;
+}
 .webpush-btn{
 	border-radius: var(--radius-sm) !important;
 	background-color: var(--color-text-primary) !important;
