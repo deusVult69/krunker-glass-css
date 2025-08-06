@@ -2060,63 +2060,6 @@ body {
 }
 /* /LOGO */
 
-/* CUSTOMIZE */
-/* #menuAccountUsername,
-.endTableN[style="color:#fff"],
-.endTableN[style="color:#fff"] span,
-.newLeaderNameM,
-.newLeaderNameM span{
-	font-size: 0;
-	visibility: hidden;
-}
-#menuAccountUsername::before,
-.endTableN[style="color:#fff"]::before,
-.newLeaderNameM::before{
-	content: var(--ign);
-	visibility: visible;
-}
-#menuAccountUsername::before{
-	font-size: 1rem;
-}
-.endTableN[style="color:#fff"]::before,
-.endTableN[style="color:#fff"] span::before{
-	font-size: 1.25rem;
-}
-.newLeaderNameM::before,
-.newLeaderNameM span::after {
-	font-size: 0.9375rem;
-}
-
-.endTableN[style="color:#fff"] span::before,
-.newLeaderNameM span::after{
-	content: var(--clan-tag);
-	display: inline;
-
-	margin-left: 5px;
-	
-  color: transparent;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-
-	background: var(--clan-tag-color);
-  background-size: 400% 400%;
-  -webkit-background-clip: text;
-  background-clip: text;
-
-	visibility: visible;
-
-  animation: rainbow 4s linear infinite;
-}
-
-@keyframes rainbow {
-  0% {
-    background-position: 0% 50%;
-  }
-  100% {
-    background-position: 400% 50%;
-  }
-} */
-/* /CUSTOMIZE */
-
 /* OVERLAY */
 #instructionHolder {
 	backdrop-filter: blur(6px);
@@ -3213,6 +3156,10 @@ input#settSearch {
 	background-color: var(--color-bg-primary);
 }
 
+/* end ui */
+.matchVote{
+	border-radius: var(--radius-sm);
+}
 .endCard{
   background-color: var(--pop-bg);
   backdrop-filter: blur(var(--glass-blur));
