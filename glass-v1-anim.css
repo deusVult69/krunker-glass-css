@@ -1,6 +1,6 @@
 /* 
 ---------------------
-| Krunker Glass v1 css
+| Krunker Glass v1 css anim
 | Author: -deusVult
 |
 | IGN: -deusVult
@@ -31,7 +31,6 @@
 	--glass-blur: 10px;
 
 	/* pop */
-	--pop-bg: #ffffff40;
 	--pop-blur: blur(10px);
 	--color-popup-shadow: 0 0 10px var(--color-primary);
 
@@ -40,8 +39,7 @@
 	--btn-border: 2px solid var(--color-primary);
 
 	/* form */
-	--input-bg: #ffffff40;
-	--input-focus-bg: #ffffff50;
+	--input-bg: var(--color-bg-primary);
 
 	/* other */
 	--border: 0;
@@ -75,6 +73,7 @@
 
 * {
 	font-family: var(--font);
+	color: var(--color-text-primary) !important;
 }
 
 /* #region fz fix */
@@ -2324,7 +2323,7 @@ body {
 	box-sizing: border-box !important;
 }
 #chatSwitch {
-	color: var(--color-primary);
+	color: var(--color-primary) !important;
 }
 
 #chatInputHolder  .greyInner,
@@ -2435,7 +2434,7 @@ body {
 #genericPop {
 	padding: var(--block-padding);
 
-	background-color: var(--pop-bg);
+	background-color: var(--glass-bg);
 	backdrop-filter: var(--pop-blur);
 	border: var(--border);
 	border-radius: var(--radius);
@@ -2448,7 +2447,7 @@ body {
 #menuWindow {
 	padding: var(--block-padding);
 
-	background-color: var(--pop-bg) !important;
+	background-color: var(--glass-bg) !important;
 	backdrop-filter: var(--pop-blur);
 	border: var(--border);
 	border-radius: var(--radius);
@@ -2634,6 +2633,9 @@ input#settSearch {
 .settName {
 	border-bottom: 2px solid var(--color-bg-primary);
 }
+.settName, .settNameSmall{
+	color: var(--color-text-primary) !important;
+}
 
 /* xpbar */
 .xpBar {
@@ -2656,10 +2658,10 @@ input#settSearch {
 }
 #menuWindow a,
 #menuWindow a:visited {
-	color: var(--color-primary);
+	color: var(--color-primary) !important;
 }
 #menuWindow .setBodH a {
-	color: var(--color-primary);
+	color: var(--color-primary) !important;
 }
 
 /* tabs */
@@ -2926,7 +2928,7 @@ input#settSearch {
 	border-radius: var(--radius);
 }
 .newLeaderNameM {
-	color: var(--color-primary);
+	color: var(--color-primary) !important;
 }
 
 /* top left */
@@ -2970,7 +2972,7 @@ input#settSearch {
 	padding-left: 0;
 }
 #timerVal {
-	color: var(--color-primary);
+	color: var(--color-primary) !important;
 	text-align: center;
 
 	text-shadow: -1px -1px 0 var(--color-bg-primary),
@@ -3019,7 +3021,7 @@ input#settSearch {
 #streakVal,
 #myScoreVal,
 #kdVal {
-	color: var(--color-primary);
+	color: var(--color-primary) !important;
 }
 
 .killfeedMsg {
@@ -3102,7 +3104,7 @@ input#settSearch {
 }
 #ammoVal,
 #ammoMax {
-	color: var(--color-primary);
+	color: var(--color-primary) !important;
 }
 #ammoMax {
 	opacity: 0.5;
@@ -3134,7 +3136,7 @@ input#settSearch {
 	color: var(--color-primary) !important;
 }
 .weapStreak {
-	color: var(--color-primary);
+	color: var(--color-primary) !important;
 }
 .weapIcon {
 	width: 150px;
@@ -3161,7 +3163,7 @@ input#settSearch {
 	border-radius: var(--radius-sm);
 }
 .endCard{
-  background-color: var(--pop-bg);
+  background-color: var(--glass-bg);
   backdrop-filter: blur(var(--glass-blur));
   border-radius: var(--radius);
 }
@@ -3209,6 +3211,26 @@ input#settSearch {
 }
 #returnHolder:hover{
 	background-color: var(--color-primary);
+}
+
+/* web notify */
+.webpush-container{
+	margin: 15px 0 !important;
+	background-color: var(--glass-bg) !important;
+	border-radius: var(--radius) !important;
+}
+.webpush-details-toggle:hover{
+	color: var(--color-primary) !important;
+}
+.webpush-btn{
+	border-radius: var(--radius-sm) !important;
+	background-color: var(--color-text-primary) !important;
+}
+.webpush-btn:hover{
+	background-color: var(--color-primary) !important;
+}
+.webpush-error{
+	border-radius: var(--radius-sm) !important;
 }
 
 /* animations menu ui */
@@ -3439,24 +3461,4 @@ input#settSearch {
 		opacity: 1;
 		transform: translate(-50%, 0) scale(1);
 	}
-}
-
-/* web notify */
-.webpush-container{
-	margin: 15px 0 !important;
-	background-color: var(--glass-bg) !important;
-	border-radius: var(--radius) !important;
-}
-.webpush-details-toggle:hover{
-	color: var(--color-primary) !important;
-}
-.webpush-btn{
-	border-radius: var(--radius-sm) !important;
-	background-color: var(--color-text-primary) !important;
-}
-.webpush-btn:hover{
-	background-color: var(--color-primary) !important;
-}
-.webpush-error{
-	border-radius: var(--radius-sm) !important;
 }

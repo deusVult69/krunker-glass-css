@@ -31,7 +31,6 @@
 	--glass-blur: 10px;
 
 	/* pop */
-	--pop-bg: #ffffff40;
 	--pop-blur: blur(10px);
 	--color-popup-shadow: 0 0 10px var(--color-primary);
 
@@ -40,8 +39,7 @@
 	--btn-border: 2px solid var(--color-primary);
 
 	/* form */
-	--input-bg: #ffffff40;
-	--input-focus-bg: #ffffff50;
+	--input-bg: var(--color-bg-primary);
 
 	/* other */
 	--border: 0;

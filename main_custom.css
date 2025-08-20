@@ -31,7 +31,6 @@
 	--glass-blur: 10px;
 
 	/* pop */
-	--pop-bg: #ffffff40;
 	--pop-blur: blur(10px);
 	--color-popup-shadow: 0 0 10px var(--color-primary);
 
