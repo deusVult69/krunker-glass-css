@@ -1996,7 +1996,6 @@ body {
 #specTimer,
 #specNames,
 #menuItemContainer,
-.chatItem,
 #chatInput,
 #menuClassIcn,
 .centerLeaderContainer,
@@ -2008,13 +2007,13 @@ body {
 #voteToKick,
 #voteToForfeit,
 #networkLag,
-#speakerDisplay,
 #skinRewardHolder,
 .topRightCounters .statIcon,
 .killfeedItem,
 #leaderboardHolder,
 #ammoHolder,
-.killStreakItem {
+.killStreakItem,
+#specStats {
 	background-color: var(--glass-bg);
 	border-radius: var(--radius) !important;
 	border: var(--border) !important;
@@ -2157,75 +2156,6 @@ body {
 #menuTimer {
 	color: var(--color-primary) !important;
 }
-
-/* spectate button */
-#spectButton {
-	top: 150px !important;
-	bottom: auto !important;
-	left: 212px !important;
-
-	display: flex;
-	align-items: center;
-
-	padding: var(--block-padding);
-
-	transform: translate(0) !important;
-}
-#spectButton span[style='font-size:15px;color:rgba(255,255,255,.6)'] {
-	font-size: 1rem !important;
-	visibility: hidden;
-}
-#spectButton .switchsml {
-	position: absolute;
-	top: 0;
-	left: 0;
-
-	width: 100%;
-	height: 100%;
-
-	margin: 0 !important;
-
-	cursor: pointer;
-}
-#spectButton .sliderSml {
-	visibility: hidden;
-}
-#spectButton .sliderSml::before {
-	content: 'Spectate';
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	z-index: 1;
-
-	width: 100%;
-	height: 100%;
-
-	display: flex;
-	align-items: center;
-	justify-content: center;
-
-	font-size: 1rem;
-	color: var(--color-text-primary);
-
-	background-color: transparent;
-	border-radius: var(--radius);
-
-	transform: translate(0) !important;
-	visibility: visible;
-
-	transition: background-color 0.3s linear;
-}
-#spectButton .sliderSml:hover::before {
-	background-color: var(--color-primary);
-}
-#specBtn:checked + .sliderSml::before {
-	content: 'Spectating';
-
-	background-color: var(--color-primary);
-}
-
 /* /HEADER */
 
 /* MENU */
@@ -2259,7 +2189,7 @@ body {
 
 	transition: all 0.3s ease-in-out;
 }
-#uiBase.onEndScrn #chatHolder {
+#uiBase.onEndScrn #chatHolder, #uiBase.onGame.onSpect #chatHolder {
 	left: 20px;
 	bottom: 20px;
 }
@@ -2705,6 +2635,9 @@ input#settSearch {
 }
 /* /tabs */
 
+#clanDeclineAll{
+	margin-top: 0;
+}
 /* /profile */
 
 /* shop */
@@ -3030,6 +2963,9 @@ input#settSearch {
 .killfeedMsg {
 	background-color: var(--color-bg-special);
 }
+.killfeedItem{
+	border: 0 !important;
+}
 
 #leaderContainer {
 	background: none;
@@ -3175,6 +3111,110 @@ input#settSearch {
 .endSection,
 .tabBody div {
   border-radius: var(--radius-sm) !important;
+}
+
+/* spec ui */
+.specControlKey{
+	color: var(--color-primary) !important;
+}
+.spectPIcon{
+	border-radius: var(--radius);
+	background: none;
+}
+.specLevelBox{
+	border-radius: var(--radius-sm);
+	background-color: var(--color-primary);
+}
+#spectHPB{
+	background: none;
+}
+#spectHPBI{
+	border-radius: var(--radius-sm);
+	background-color: var(--color-primary) !important;
+}
+
+/* spec playerlist */
+.pListTable{
+	background: none;
+}
+#plySearchH #plySearch{
+	border-radius: var(--radius-sm);
+	border: 2px solid var(--color-primary) !important;
+}
+.pListName{
+	display: inline-flex;
+	align-items: center;
+}
+.muteUserBtn, .punishButton{
+	margin-top: 0;
+}
+
+/* spectate button */
+#spectButton {
+	top: 150px !important;
+	bottom: auto !important;
+	left: 212px !important;
+
+	display: flex;
+	align-items: center;
+
+	padding: var(--block-padding);
+
+	transform: translate(0) !important;
+}
+#spectButton span[style='font-size:15px;color:rgba(255,255,255,.6)'] {
+	font-size: 1rem !important;
+	visibility: hidden;
+}
+#spectButton .switchsml {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	width: 100%;
+	height: 100%;
+
+	margin: 0 !important;
+
+	cursor: pointer;
+}
+#spectButton .sliderSml {
+	visibility: hidden;
+}
+#spectButton .sliderSml::before {
+	content: 'Spectate';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+
+	width: 100%;
+	height: 100%;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	font-size: 1rem;
+	color: var(--color-text-primary);
+
+	background-color: transparent;
+	border-radius: var(--radius);
+
+	transform: translate(0) !important;
+	visibility: visible;
+
+	transition: background-color 0.3s linear;
+}
+#spectButton .sliderSml:hover::before {
+	background-color: var(--color-primary);
+}
+#specBtn:checked + .sliderSml::before {
+	content: 'Spectating';
+
+	background-color: var(--color-primary);
 }
 
 /* pc7 */
