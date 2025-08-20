@@ -39,8 +39,7 @@
 	--btn-border: 2px solid var(--color-primary);
 
 	/* form */
-	--input-bg: #ffffff40;
-	--input-focus-bg: #ffffff50;
+	--input-bg: var(--color-bg-primary);
 
 	/* other */
 	--border: 0;
