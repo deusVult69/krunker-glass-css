@@ -7,7 +7,7 @@
 // @match        https://krunker.io/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=krunker.io
 // @grant        none
-// @run-at       document-idle  // Waits for page to fully load dynamic content
+// @run-at       document-end  // Waits for page to fully load dynamic content
 // ==/UserScript==
 
 // | IGN: -deusVult
@@ -39,11 +39,9 @@
 			name: '--logo-caption',
 			value: 'Meow clan',
 		},
-		borderEnabled: {
-			value: false,
-		},
 		borderStyle: {
 			name: '--border',
+			checked: false,
 			value: '2px solid var(--color-primary)',
 		},
 	}
@@ -57,37 +55,39 @@
 	}
 
 	function updateVar(varKey) {
-		const variable = vars[varKey]
-		if (!variable) return
-
-		const { name, value } = variable
-
-		if (variable.name) {
-			const formattedValue = variable.name.includes('logo')
-				? `"${variable.value}"`
-				: variable.value
-			document.documentElement.style.setProperty(variable.name, formattedValue)
+		if (!vars.hasOwnProperty(varKey)) {
+			console.warn(`Variable ${varKey} not found in vars obj`)
+			return
 		}
 
-		if (varKey === 'borderEnabled' || varKey === 'primaryColor') {
+		const { name, value, checked = undefined } = vars[varKey]
+
+		if (varKey === 'borderStyle') {
+			applyBorderStyle()
+			return
+		}
+
+		const formattedValue = name.includes('logo') ? `"${value}"` : value
+		document.documentElement.style.setProperty(name, formattedValue)
+
+		if (varKey === 'primaryColor') {
 			applyBorderStyle()
 		}
 	}
 
 	function updateAllVars() {
 		Object.keys(vars).forEach(updateVar)
-		applyBorderStyle()
 	}
 
 	function resetVarsToDefault() {
-		vars = { ...DEFAULT_VARS }
+		vars = JSON.parse(JSON.stringify(DEFAULT_VARS))
 		updateAllVars()
 		localStorage.removeItem(STORAGE_KEY)
 		resetInputValues()
 	}
 
 	function applyBorderStyle() {
-		const borderValue = vars?.borderEnabled?.value
+		const borderValue = vars.borderStyle.checked
 			? `2px solid ${vars.primaryColor.value}`
 			: 'none'
 
@@ -98,7 +98,7 @@
 	updateAllVars()
 
 	const observer = new MutationObserver(() => {
-		if (isTabsLoaded) {
+		if (isTabsLoaded()) {
 			createCustomTab()
 		}
 	})
@@ -143,10 +143,16 @@
 		return `customVarInput_${varKey}`
 	}
 	function resetInputValues() {
-		Object.keys(vars).forEach((varKey) => {
+		Object.keys(vars).forEach(varKey => {
 			const input = document.getElementById(getInputId(varKey))
 
-			if (input) {
+			if (!input) return
+
+			if (input.type === 'color' && vars[varKey].value.length > 7) {
+				input.value = vars[varKey].value.substring(0, 7)
+			} else if (input.type === 'checkbox') {
+				input.checked = vars[varKey].checked
+			} else {
 				input.value = vars[varKey].value
 			}
 		})
@@ -182,7 +188,11 @@
 	}
 
 	function createToggleSetting(desc, varKey, id) {
-		const { value } = vars[varKey]
+		if (!vars.hasOwnProperty(varKey)) {
+			console.warn(`Variable ${varKey} not found in vars object`)
+			return
+		}
+		const { checked } = vars[varKey]
 
 		const setContainer = document.createElement('div')
 		setContainer.className = 'settName'
@@ -199,11 +209,11 @@
 		const checkbox = document.createElement('input')
 		checkbox.type = 'checkbox'
 		checkbox.id = id
-		checkbox.value = value
+		checkbox.checked = checked
 		checkbox.style.cssText = 'float:right;margin-top:5px;'
 
 		checkbox.addEventListener('change', () => {
-			vars[varKey].value = checkbox.checked
+			vars[varKey].checked = checkbox.checked
 			updateVar(varKey)
 			saveVars()
 		})
@@ -239,8 +249,9 @@
 		if (
 			!settingsTabContent ||
 			document.getElementById('customCssInputPrimaryColor')
-		)
+		) {
 			return
+		}
 
 		settingsTabContent.innerHTML = ''
 
@@ -288,8 +299,8 @@
 			),
 			createToggleSetting(
 				'Enable borders',
-				'borderEnabled',
-				getInputId('borderEnabled')
+				'borderStyle',
+				getInputId('borderStyle')
 			),
 			createResetButton(),
 		]
