@@ -7,7 +7,7 @@
 // @match        https://krunker.io/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=krunker.io
 // @grant        none
-// @run-at       document-end  // Waits for page to fully load dynamic content
+// @run-at       document-end
 // ==/UserScript==
 
 // | IGN: -deusVult
@@ -45,6 +45,8 @@
 			value: '2px solid var(--color-primary)',
 		},
 	}
+
+	console.log('customizer running')
 
 	let vars =
 		JSON.parse(localStorage.getItem(STORAGE_KEY)) ||
@@ -94,18 +96,20 @@
 		document.documentElement.style.setProperty('--border', borderValue)
 	}
 
-	//apply changes when refresh
-	updateAllVars()
+	window.addEventListener('DOMContentLoaded', () => {
+		//apply changes when refresh
+		updateAllVars()
 
-	const observer = new MutationObserver(() => {
-		if (isTabsLoaded()) {
-			createCustomTab()
-		}
-	})
+		const observer = new MutationObserver(() => {
+			if (isTabsLoaded()) {
+				createCustomTab()
+			}
+		})
 
-	observer.observe(document.getElementById('menuWindow'), {
-		childList: true,
-		subtree: true,
+		observer.observe(document.getElementById('menuWindow'), {
+			childList: true,
+			subtree: true,
+		})
 	})
 
 	function isTabsLoaded() {
