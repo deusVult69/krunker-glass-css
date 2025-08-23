@@ -26,12 +26,14 @@ To always have the latest version: download or copy `main_custom.css`.
 You can use it in browser too. Install `Stylus` extension and save css file.
 
 ---
-If you want animations (switching between menu and game ui) you can use this file `main_custom_anim.css`.     
+If you want animations (switching between menu and game ui) you can use this file `main_custom_anim.css`.  
 
-**Userscript customizer**
-Download userscript `scripts/glassCssCustomizer.js` and add it to your client scripts folder. E.g. in PC7 its `/PC7Scripts` (You can open it in settings - client tab). For other clients its similar.
+---
 
-You can use it in browser too! Download `Tampermonkey` extension (11m users | chrome) and save this script. Check docs.
+**Userscript customizer**  
+Download userscript `scripts/glassCssCustomizer.js` and add it to your client scripts folder. E.g. in PC7 its `/PC7Scripts` (You can open it in settings - client tab). `resourceSwapper/userscripts/` for other clients
+
+You can use it in browser too! Download `Tampermonkey` extension and save this script. Check docs.
 
 **Glass CSS Customizer video guide**
 [![css customizer](https://github.com/deusVult69/krunker-glass-css/blob/main/screenshots/customizer-preview.png?raw=true)](https://youtu.be/-7I2oifU1UI "customizer userscript preview")
