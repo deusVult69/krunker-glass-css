@@ -74,7 +74,7 @@
 * {
 	font-family: var(--font);
 }
-*:not(i){
+*:not(i) {
 	color: var(--color-text-primary) !important;
 }
 
@@ -1976,7 +1976,9 @@ body {
 #PC7WaterMark1,
 #PC7WaterMark2,
 #topRightAdHolder,
-#aHolder {
+#aHolder,
+#notificationCenter,
+.webpush-container {
 	display: none !important;
 }
 /* /REMOVAL */
@@ -2189,7 +2191,8 @@ body {
 
 	transition: all 0.3s ease-in-out;
 }
-#uiBase.onEndScrn #chatHolder, #uiBase.onGame.onSpect #chatHolder {
+#uiBase.onEndScrn #chatHolder,
+#uiBase.onGame.onSpect #chatHolder {
 	left: 20px;
 	bottom: 20px;
 }
@@ -2197,7 +2200,7 @@ body {
 	left: 20px;
 	bottom: 130px;
 }
-#uiBase.onCompMenu #chatHolder{
+#uiBase.onCompMenu #chatHolder {
 	left: 20px;
 	bottom: 150px;
 }
@@ -2258,9 +2261,9 @@ body {
 	color: var(--color-primary) !important;
 }
 
-#chatInputHolder  .greyInner,
-#chatInputHolder  .greyInlineInner,
-#chatInputHolder  .greyInlineInnerMid {
+#chatInputHolder .greyInner,
+#chatInputHolder .greyInlineInner,
+#chatInputHolder .greyInlineInnerMid {
 	display: flex;
 	align-items: center;
 	background: none !important;
@@ -2351,9 +2354,8 @@ body {
 	padding: var(--block-padding) !important;
 
 	transition: background-color 0.3s linear;
-	
 }
-#subLogoButtons .button:last-child{
+#subLogoButtons .button:last-child {
 	margin-bottom: 0;
 }
 #subLogoButtons .button:hover {
@@ -2412,11 +2414,11 @@ body {
 	position: static;
 }
 /* form */
-#itemSearchH{
+#itemSearchH {
 	display: grid;
 	grid-template-columns: auto 1fr auto;
 }
-	
+
 #menuWindow input,
 #loadoutSelect,
 #itemSearch,
@@ -2440,10 +2442,11 @@ body {
 #menuWindow input[type='color'] {
 	overflow: hidden;
 }
-#itemSearch{
+#itemSearch {
 	margin-bottom: 0;
 }
-.custBack, .winClose{
+.custBack,
+.winClose {
 	border-radius: var(--radius);
 }
 .slider,
@@ -2566,7 +2569,8 @@ input#settSearch {
 .settName {
 	border-bottom: 2px solid var(--color-bg-primary);
 }
-.settName, .settNameSmall{
+.settName,
+.settNameSmall {
 	color: var(--color-text-primary) !important;
 }
 
@@ -2635,7 +2639,7 @@ input#settSearch {
 }
 /* /tabs */
 
-#clanDeclineAll{
+#clanDeclineAll {
 	margin-top: 0;
 }
 /* /profile */
@@ -2849,7 +2853,9 @@ input#settSearch {
 }
 
 /* game ui */
-.greyInner, .greyInlineInner, .greyInlineInnerMid{
+.greyInner,
+.greyInlineInner,
+.greyInlineInnerMid {
 	background: none;
 }
 /* leaderboard */
@@ -2859,7 +2865,7 @@ input#settSearch {
 .centerLeaderContainerInner {
 	background-color: var(--color-bg-special);
 }
-.newLeaderTeam{
+.newLeaderTeam {
 	margin-top: -6px;
 	border-radius: var(--radius);
 }
@@ -2963,7 +2969,7 @@ input#settSearch {
 .killfeedMsg {
 	background-color: var(--color-bg-special);
 }
-.killfeedItem{
+.killfeedItem {
 	border: 0 !important;
 }
 
@@ -3048,7 +3054,7 @@ input#settSearch {
 #ammoMax {
 	opacity: 0.5;
 }
-.killStreakItemInner{
+.killStreakItemInner {
 	background: none;
 }
 
@@ -3098,54 +3104,55 @@ input#settSearch {
 }
 
 /* end ui */
-.matchVote{
+.matchVote {
 	border-radius: var(--radius-sm);
 }
-.endCard{
-  background-color: var(--glass-bg);
-  backdrop-filter: blur(var(--glass-blur));
-  border-radius: var(--radius);
+.endCard {
+	background-color: var(--glass-bg);
+	backdrop-filter: blur(var(--glass-blur));
+	border-radius: var(--radius);
 }
 #tabHolder,
-#endTable, 
+#endTable,
 .endSection,
 .tabBody div {
-  border-radius: var(--radius-sm) !important;
+	border-radius: var(--radius-sm) !important;
 }
 
 /* spec ui */
-.specControlKey{
+.specControlKey {
 	color: var(--color-primary) !important;
 }
-.spectPIcon{
+.spectPIcon {
 	border-radius: var(--radius);
 	background: none;
 }
-.specLevelBox{
+.specLevelBox {
 	border-radius: var(--radius-sm);
 	background-color: var(--color-primary);
 }
-#spectHPB{
+#spectHPB {
 	background: none;
 }
-#spectHPBI{
+#spectHPBI {
 	border-radius: var(--radius-sm);
 	background-color: var(--color-primary) !important;
 }
 
 /* spec playerlist */
-.pListTable{
+.pListTable {
 	background: none;
 }
-#plySearchH #plySearch{
+#plySearchH #plySearch {
 	border-radius: var(--radius-sm);
 	border: 2px solid var(--color-primary) !important;
 }
-.pListName{
+.pListName {
 	display: inline-flex;
 	align-items: center;
 }
-.muteUserBtn, .punishButton{
+.muteUserBtn,
+.punishButton {
 	margin-top: 0;
 }
 
@@ -3228,10 +3235,10 @@ input#settSearch {
 #compClassPHolder,
 .compTScrB,
 #compBtnLst,
-#roundsDisplay{
+#roundsDisplay {
 	background-color: var(--glass-bg) !important;
 }
-.roundScrV{
+.roundScrV {
 	background: none;
 }
 
@@ -3240,39 +3247,39 @@ input#settSearch {
 .compPLstIcn,
 .compMenBtnS,
 .compPlWpIcn,
-#roundsDisplay{
+#roundsDisplay {
 	border-radius: var(--radius);
 	overflow: hidden;
 }
 
-#returnHolder{
+#returnHolder {
 	background-color: var(--glass-bg);
 	border-radius: var(--radius);
 	border: 0;
 
-	transition: background-color .3s linear;
+	transition: background-color 0.3s linear;
 }
-#returnHolder:hover{
+#returnHolder:hover {
 	background-color: var(--color-primary);
 }
 
 /* web notify */
-.webpush-container{
+.webpush-container {
 	margin: 15px 0 !important;
 	background-color: var(--glass-bg) !important;
 	border-radius: var(--radius) !important;
 }
-.webpush-details-toggle:hover{
+.webpush-details-toggle:hover {
 	color: var(--color-primary) !important;
 }
-.webpush-btn{
+.webpush-btn {
 	border-radius: var(--radius-sm) !important;
 	background-color: var(--color-text-primary) !important;
 }
-.webpush-btn:hover{
+.webpush-btn:hover {
 	background-color: var(--color-primary) !important;
 }
-.webpush-error{
+.webpush-error {
 	border-radius: var(--radius-sm) !important;
 }
 
@@ -3443,7 +3450,7 @@ input#settSearch {
 }
 
 #uiBase.onGame #fpsDisplay,
-#uiBase.onGame #pingDisplay, 
+#uiBase.onGame #pingDisplay,
 #uiBase.onGame #bottomLeftHolder {
 	transform: translateX(-200px);
 	opacity: 0;
@@ -3457,7 +3464,7 @@ input#settSearch {
 #uiBase.onGame #pingDisplay {
 	animation-delay: 0.2s;
 }
-#uiBase.onGame #bottomLeftHolder{
+#uiBase.onGame #bottomLeftHolder {
 	animation-delay: 0.3s;
 }
 
